@@ -2,7 +2,7 @@
 
 ## Overview
 
-Popover is a pop-up dinner scheduling application. Users can host events at their home or around Austin, TX and members can sign up to attend.
+Popover is a pop-up dinner scheduling application. Users can host events at their home or around Austin, TX and members can RSVP to attend events.
 
 ## Goal
 
