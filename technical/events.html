@@ -1,0 +1,92 @@
+<!DOCTYPE>
+
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Popover</title>
+	    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+	    <link type="text/css" rel="stylesheet" href="css/main.css">
+	    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+    <div class="header">
+      <a href="index.html" class="header-logo"><div class="logo-place"></div></a>
+      <nav class = "nav-primary" role = "navigation">
+      <a href="" class="menuIcon">☰</a>
+      <ul class="nav">
+        <a href="index.html"><li>Home</li></a>
+        <a href="#"><li class="selected">Events</li></a>
+        <a href="#"><li>Create Event</li></a>
+      </ul>
+<!--         <ul role = "menubar">
+          <li role = "presentation"><a href = "#" role = "menuitem">Home</a></li>
+          <li role = "presentation"><a href = "#" role = "menuitem">Events</a></li>
+          <li role = "presentation"><a href = "#" role = "menuitem">Create Event</a></li>
+        </ul> -->
+      </nav>
+    </div>
+		<div class="scroll-on-page">
+      <aside id="scroll-on-page-top">
+        <a class="scroll-on-page-link" href="#scroll-link-1">Upcoming Events</a>
+        <a class="scroll-on-page-link" href="#scroll-link-2">Past Events</a>
+        <a class="scroll-on-page-link" href="#scroll-link-3">My Events</a>
+      </aside>
+
+      <article>
+        <section>
+          <h4 id="scroll-link-1">Upcoming Events</h4>
+            <div></div>
+            <div></div>
+            <div></div>
+          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
+        </section>
+        <section>
+          <h4 id="scroll-link-2">Past Events</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid necessitatibus, repudiandae veniam labore, consequatur maiores dolore unde non deleniti, aliquam minima ex nulla error eveniet vel tempore, in incidunt?</p>
+          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
+        </section>
+        <section>
+          <h4 id="scroll-link-3">My Events</h4>
+          <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid necessitatibus, repudiandae veniam labore, consequatur maiores dolore unde non deleniti, aliquam minima ex nulla error eveniet vel tempore, in incidunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid necessitatibus, repudiandae veniam labore, consequatur maiores dolore unde non deleniti, aliquam minima ex nulla error eveniet vel tempore, in incidunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid necessitatibus, repudiandae veniam labore, consequatur maiores dolore unde non deleniti, aliquam minima ex nulla error eveniet vel tempore, in incidunt?</p>
+          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
+        </section>
+      </article>
+</div>
+<script>$(".menuIcon").click(function(event) {
+  event.preventDefault();
+  $(".nav").toggleClass("list");
+});</script>
+<script>
+(function (jQuery) {
+  jQuery.mark = {
+    jump: function (options) {
+      var defaults = {
+        selector: 'a.scroll-on-page-link'
+      };
+      if (typeof options == 'string') {
+        defaults.selector = options;
+      }
+
+      options = jQuery.extend(defaults, options);
+      return jQuery(options.selector).click(function (e) {
+        var jumpobj = jQuery(this);
+        var target = jumpobj.attr('href');
+        var thespeed = 1000;
+        var offset = jQuery(target).offset().top;
+        jQuery('html,body').animate({
+          scrollTop: offset
+        }, thespeed, 'swing');
+        e.preventDefault();
+      });
+    }
+  };
+})(jQuery);
+
+
+jQuery(function(){  
+  jQuery.mark.jump();
+});
+
+</script>
+	</body>
+</html>
