@@ -17,7 +17,9 @@ html {
     width: 40px;
     margin-left: 30px;
     margin-top: 15px;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    float: left; }
   .header .menuIcon {
     background: #1fb870;
     display: block;
@@ -45,7 +47,8 @@ html {
     letter-spacing: .1em;
     padding: 1em;
     margin: .3em;
-    display: block; }
+    display: block;
+    transition: all 0.3s; }
     .header .nav li:hover {
       border: solid 3px #f5f6f4; }
   .header .nav a {
@@ -53,7 +56,7 @@ html {
   .header .list {
     display: block; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   .header {
     width: 100%; }
     .header .nav {
@@ -62,7 +65,7 @@ html {
       padding: 0;
       width: 100%;
       text-align: center;
-      display: inline-block; }
+      display: block; }
       .header .nav .selected {
         border: solid 3px #f5f6f4; }
     .header .nav li {
@@ -75,91 +78,102 @@ html {
       font-size: 1.125rem;
       letter-spacing: .1em;
       margin: .5rem;
-      padding: 12px 15px; }
+      padding: 12px 15px;
+      transition: all 0.3s ease-in-out; }
       .header .nav li:hover {
         border: solid 3px #f5f6f4; }
     .header .menuIcon {
       display: none; } }
-/*minimal tabs*/
-.accordion-tabs-minimal {
-  line-height: 1.5;
-  padding: 0; }
-  .accordion-tabs-minimal::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .accordion-tabs-minimal li.tab-header-and-content {
-    list-style: none; }
-    @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal li.tab-header-and-content {
-        display: inline; } }
-  .accordion-tabs-minimal a.tab-link {
-    background-color: white;
-    border-top: 1px solid gainsboro;
-    color: #333;
-    display: block;
-    padding: 0.75em 1.618em;
-    text-decoration: none; }
-    @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal a.tab-link {
-        display: inline-block;
-        border-top: 0; } }
-    .accordion-tabs-minimal a.tab-link:hover {
-      color: #477DCA; }
-    .accordion-tabs-minimal a.tab-link:focus {
-      outline: none; }
-    .accordion-tabs-minimal a.tab-link.is-active {
-      border-bottom: 0; }
-      @media screen and (min-width: 40em) {
-        .accordion-tabs-minimal a.tab-link.is-active {
-          border: 1px solid gainsboro;
-          border-bottom-color: white;
-          margin-bottom: -1px; } }
-  .accordion-tabs-minimal .tab-content {
-    display: none;
-    padding: 1.5em 1.618em;
-    width: 100%; }
-    @media screen and (min-width: 40em) {
-      .accordion-tabs-minimal .tab-content {
-        border-top: 1px solid gainsboro;
-        float: left; } }
+/*Global styling*/
+body {
+  background-color: #f5f6f4;
+  width: 100%; }
 
 /*Events Section*/
 .scroll-on-page {
   display: inline-block; }
   .scroll-on-page a {
-    color: #477DCA;
+    color: #262626;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
     text-decoration: none; }
-  @media screen and (min-width: 30em) {
-    .scroll-on-page aside {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .scroll-on-page aside:last-child {
-        margin-right: 0; } }
+  .scroll-on-page aside {
+    margin-top: 60px; }
+    @media screen and (min-width: 30em) {
+      .scroll-on-page aside {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .scroll-on-page aside:last-child {
+          margin-right: 0; } }
   .scroll-on-page .scroll-on-page-link {
-    border-bottom: 1px solid rgba(71, 125, 202, 0.2);
     display: block;
-    margin-right: 1.5em;
+    font-size: 18px;
     outline: none;
-    padding: 0.75em 0; }
+    padding: 0.75em 30px; }
+    .scroll-on-page .scroll-on-page-link:first-child {
+      padding-top: 1.5em; }
     .scroll-on-page .scroll-on-page-link:last-child {
-      margin-bottom: 1.5em; }
-  .scroll-on-page article h4 {
-    margin: 0 0 0.5em 0; }
-  .scroll-on-page article p {
-    color: #333;
-    line-height: 1.5em; }
-  .scroll-on-page article section p:last-of-type {
-    margin-bottom: 2em; }
-  @media screen and (min-width: 30em) {
-    .scroll-on-page article {
+      margin-bottom: 1.5em;
+      border-bottom: 3px solid rgba(31, 184, 112, 0.2); }
+  .scroll-on-page article {
+    max-width: 700px;
+    width: 100%; }
+    .scroll-on-page article section {
+      padding: 0 30px; }
+    .scroll-on-page article h4 {
+      color: #1fb870;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 60px 15px 30px 15px;
+      width: 100%;
+      text-align: center; }
+    .scroll-on-page article div {
+      border-bottom: solid 3px #1fb870;
+      border-left: solid 10px #1fb870;
+      border-right: solid 3px #1fb870;
+      border-top: solid 3px #1fb870;
       float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      .scroll-on-page article:last-child {
-        margin-right: 0; } }
+      margin: 15px 0;
+      width: 100%; }
+    .scroll-on-page article p {
+      color: #394a43;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5em;
+      padding-left: 15px;
+      padding-right: 15px; }
+    .scroll-on-page article section p:first-of-type {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 100%; }
+    .scroll-on-page article section p:last-of-type {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 0; }
+    @media screen and (min-width: 30em) {
+      .scroll-on-page article {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        .scroll-on-page article:last-child {
+          margin-right: 0; }
+        .scroll-on-page article section {
+          box-sizing: border-box;
+          overflow: hidden;
+          width: 100%;
+          padding: 0 30px; }
+        .scroll-on-page article h4 {
+          font-size: 36px; }
+        .scroll-on-page article div {
+          width: 100%;
+          float: left; } }
+
+/*Media queries*/
 
 /*# sourceMappingURL=main.css.map */

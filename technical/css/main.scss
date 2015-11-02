@@ -14,46 +14,6 @@ $grey: #f5f6f4;
 
 /*Main navigation*/
 
-// .nav-primary {
-
-// 	background-color: $green;
-// 	clear: both;
-//     margin: 0;
-//     padding: 0;
-//     text-align: center;
-
-//     ul {
-//     	padding-left: 0;
-//     }
-// 	li {
-// 	    display: inline-block;
-// 	    list-style-type: none;
-// 	    margin: .5rem;
-// 	    padding: 1rem;
-// 	    vertical-align: bottom;
-// 	}
-
-// 	a {
-// 		text-decoration: none;
-// 		border: solid 2px transparent;
-// 		color: $grey;
-// 		font-family: $dosis;
-// 		font-size: 1.125rem;
-// 		font-weight: 600;
-// 		padding: 12px 15px;
-
-// 		&:hover {
-// 			border: solid 2px $grey;
-// 		}
-
-// 	}
-// }
-
-
-// .header a .logo-place, nav {
-// 	display: inline-block;
-
-// }
 
 .header {
 	width: 100%;
@@ -67,6 +27,8 @@ $grey: #f5f6f4;
 		margin-left: 30px;
 		margin-top: 15px;
 		text-decoration: none;
+		display: inline-block;
+		float: left;
 	}
 
 	.menuIcon {
@@ -103,6 +65,7 @@ $grey: #f5f6f4;
 		padding: 1em;
 		margin: .3em;
 		display: block;
+		transition: all 0.3s;
 
 		&:hover {
 			border: solid 3px $grey;
@@ -118,7 +81,7 @@ $grey: #f5f6f4;
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
 
 	.header {
 		width: 100%;
@@ -132,10 +95,10 @@ $grey: #f5f6f4;
 			// left: 0;
 			width: 100%;
 			text-align: center;
-			display: inline-block;
+			display: block;
 
 			.selected {
-					border: solid 3px $grey;
+				border: solid 3px $grey;
 			}
 		}
 
@@ -150,6 +113,7 @@ $grey: #f5f6f4;
 			letter-spacing: .1em;
 			margin: .5rem;
 			padding: 12px 15px;
+			transition: all 0.3s ease-in-out;
 
 			&:hover {
 				border: solid 3px $grey;
@@ -162,135 +126,140 @@ $grey: #f5f6f4;
 	}
 }
 
-/*minimal tabs*/
+/*Global styling*/
 
-.accordion-tabs-minimal {
-  $base-border-color: gainsboro !default;
-  $base-background-color: white !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $medium-screen: em(640) !default;
-  $tab-link-color: $dark-gray;
-  $tab-border: 1px solid $base-border-color;
-  $tab-active-background: $base-background-color;
-  $tab-inactive-color: $base-background-color;
-  $tab-inactive-hover-color: silver;
-  $tab-mode: $medium-screen;
-
-  @include clearfix;
-  line-height: 1.5;
-  padding: 0;
-
-  li.tab-header-and-content {
-    list-style: none;
-
-    @include media($tab-mode) {
-      display: inline;
-    }
-  }
-
-  a.tab-link {
-    background-color: $tab-inactive-color;
-    border-top: $tab-border;
-    color: $tab-link-color;
-    display: block;
-    padding: ($base-spacing / 2) $gutter;
-    text-decoration: none;
-
-    @include media($tab-mode) {
-      @include inline-block;
-      border-top: 0;
-    }
-
-    &:hover {
-      color: $action-color;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    &.is-active {
-      border-bottom: 0;
-
-      @include media($tab-mode) {
-        border: $tab-border;
-        border-bottom-color: $tab-active-background;
-        margin-bottom: -1px;
-      }
-    }
-  }
-
-  .tab-content {
-    display: none;
-    padding: $base-spacing $gutter;
-    width: 100%;
-
-    @include media($tab-mode) {
-      border-top: $tab-border;
-      float: left;
-    }
-  }
+body {
+	background-color: $grey;
+	width: 100%;
 }
 
 /*Events Section*/
 
+
+
 .scroll-on-page {
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $large-screen: em(480) !default;
-  $base-font-color: $dark-gray !default;
+	$base-line-height: 1.5em !default;
+	$base-spacing: 1.5em !default;
+	$action-color: #477DCA !default;
+	$dark-gray: #333 !default;
+	$large-screen: em(480) !default;
+	$base-font-color: $dark-green !default;
 
-  display: inline-block;
+	display: inline-block;
 
-  a {
-    color: $action-color;
-    text-decoration: none;
-  }
+	a {
+		color: $key-color;
+		font-family: $dosis;
+		font-weight: 600;
+		text-decoration: none;
+	}
 
-  aside {
-    @include media($large-screen) {
-      @include span-columns(4);
-    }
-  }
+	aside {
+		margin-top: 60px;
+		@include media($large-screen) {
+	  		@include span-columns(4);
+		}
+	}
 
-  .scroll-on-page-link {
-    border-bottom: 1px solid transparentize($action-color, 0.8);
-    display: block;
-    margin-right: $base-spacing;
-    outline: none;
-    padding: ($base-spacing / 2) 0;
+	.scroll-on-page-link {
 
-    &:last-child {
-      margin-bottom: $base-spacing;
-    }
-  }
+		display: block;
+		font-size: 18px;
+		// margin-right: $base-spacing;
+		outline: none;
+		padding: ($base-spacing / 2) 30px;
 
-  article {
-    h4 {
-      margin: 0 0 0.5em 0;
-    }
+		&:first-child {
+			padding-top: $base-spacing;
+		}
 
-    p {
-      color: $base-font-color;
-      line-height: $base-line-height;
-    }
+		&:last-child {
+			margin-bottom: $base-spacing;
+			border-bottom: 3px solid transparentize($green, 0.8);
+		}
+	}
 
-    section p:last-of-type {
-      margin-bottom: 2em; 
-    }
+	article {
+		max-width: 700px;
+		width: 100%;
 
-    @include media($large-screen) {
-      @include span-columns(8);
-    }
-  }
+		section {
+			padding: 0 30px;
+		}
+
+		h4 {
+			color: $green;
+			font-family: $montserrat;
+			font-weight: 700;
+			font-size: 24px;
+			margin: 60px 15px 30px 15px;
+			width: 100%;
+		  	text-align: center;
+		}
+
+		div {
+			border-bottom: solid 3px $green;
+			border-left: solid 10px $green;
+			border-right: solid 3px $green;
+			border-top: solid 3px $green;
+			float: left;
+			// box-shadow: 3px 3px #66cccc;
+			margin: 15px 0;
+			width: 100%;
+		}
+
+		p {
+			color: $dark-green;
+			font-family: $montserrat; 
+			line-height: $base-line-height;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		section p:first-of-type {
+			font-size: 18px;
+			font-weight: 400;
+		  	margin-top: 30px; 
+		  	margin-bottom: 10px;
+		  	width: 100%;
+		}
+
+		section p:last-of-type {
+			font-size: 24px;
+			font-weight: 700;
+		  	margin-bottom: 30px;
+		  	margin-top: 0; 
+		}
+
+		@include media($large-screen) {
+			@include span-columns(8);
+
+			section {
+
+				box-sizing: border-box;
+				overflow: hidden;
+				width: 100%;
+				padding: 0 30px;
+			}
+
+			h4 {
+				font-size: 36px;
+			}
+
+			div {
+
+				width: 100%;
+				float: left;
+
+			}
+		}
+	}
 }
 
+/*Media queries*/
 
 @media screen and (min-width: 480px) {
+
 
 }
 
