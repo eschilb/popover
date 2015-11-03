@@ -21,102 +21,15 @@
       </ul>
       </nav>
     </div>
-		<div class="scroll-on-page">
-      <aside id="scroll-on-page-top">
-        <a class="scroll-on-page-link" href="#scroll-link-1">Upcoming Events</a>
-        <a class="scroll-on-page-link" href="#scroll-link-2">Past Events</a>
-        <a class="scroll-on-page-link" href="#scroll-link-3">My Events</a>
-      </aside>
+		<div class="main-container">
 
-      <article>
-        <section>
-          <h4 id="scroll-link-1">Upcoming Events</h4>
-
-            <div>
-              <p>Wed, Nov 18 | 6 pm</p>
-              <p>Mambo Italiano</p>
-            </div>
-            <div>
-              <p>Mon, Nov 23 | 7 pm</p>
-              <p>Give Thanks Dinner</p>
-            </div>
-            <div>
-              <p>Fri, Dec 4 |  7:30 pm</p>
-              <p>Barbecuing</p>
-            </div>
-          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
-        </section>
-        <section>
-          <h4 id="scroll-link-2">Past Events</h4>
-            <div>
-              <p>Fri, Oct 30 | 6 pm</p>
-              <p>Eating In the Dark</p>
-            </div>
-            <div>
-              <p>Thurs, Oct 22 | 7 pm</p>
-              <p>Locavore Dinner</p>
-            </div>
-            <div>
-              <p>Sat, Oct 17 | 7:30 pm</p>
-              <p>Loco for Tacos</p>
-            </div>
-          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
-        </section>
-        <section>
-          <h4 id="scroll-link-3">My Events</h4>
-            <div>
-              <p>Wed, Nov 18 | 6 pm</p>
-              <p>Mambo Italiano</p>
-            </div>
-            <div>
-              <p>Mon, Nov 23 | 7 pm</p>
-              <p>Give Thanks Dinner</p>
-            </div>
-            <div>
-              <p>Fri, Dec 4 | 7:30 pm</p>
-              <p>Barbecuing</p>
-            </div>
-          <a class="scroll-on-page-link" href="#scroll-on-page-top">Back to top</a>
-        </section>
-      </article>
-</div>
+    </div>
 
 <script>$(".menuIcon").click(function(event) {
   event.preventDefault();
   $(".nav").toggleClass("list");
 });
 </script>
-<script>
-(function (jQuery) {
-  jQuery.mark = {
-    jump: function (options) {
-      var defaults = {
-        selector: 'a.scroll-on-page-link'
-      };
-      if (typeof options == 'string') {
-        defaults.selector = options;
-      }
 
-      options = jQuery.extend(defaults, options);
-      return jQuery(options.selector).click(function (e) {
-        var jumpobj = jQuery(this);
-        var target = jumpobj.attr('href');
-        var thespeed = 1000;
-        var offset = jQuery(target).offset().top;
-        jQuery('html,body').animate({
-          scrollTop: offset
-        }, thespeed, 'swing');
-        e.preventDefault();
-      });
-    }
-  };
-})(jQuery);
-
-
-jQuery(function(){  
-  jQuery.mark.jump();
-});
-
-</script>
 	</body>
 </html>

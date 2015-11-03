@@ -21,7 +21,9 @@
       </ul>
       </nav>
     </div>
+
     <div class="create-event-header">You’re creating a Popover dinner event that you'll host for other members! After you create the event, you can view the guestlist and get planning.</div>
+    <div class="create-container">    
     <form>
 	    <div>
 	        <label for="name">Name:</label>
@@ -35,12 +37,11 @@
 	        <label for="time">Time:</label>
 	        <input type="time" id="time"></input>
 	    </div>
-	        <div>
+	    <div>
 	        <label for="description">Event Description:</label>
 	        <textarea id="description" onfocus="this.value=''; this.onfocus=null;">Give some details to build excitement about your dinner</textarea>
 	    </div>
-	    </div>
-	        <div>
+	    <div>
 	        <label for="menu">Menu:</label>
 	        <textarea id="menu" onfocus="this.value=''; this.onfocus=null;">Let guests know the menu you'll serve</textarea>
 	    </div>
@@ -60,6 +61,7 @@
 	        <button type="submit">Create Event</button>
 	    </div>
 	</form>
+	</div>
 <script >$(document).ready(function() {
     $("#time").val("19:00");
 });</script>

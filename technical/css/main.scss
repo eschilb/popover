@@ -261,16 +261,20 @@ body {
 	background-color: $dark-green;
 	color: $grey;
 	font-family: $dosis;
-	margin-top: 60px;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-top: 30px;
 	padding: 30px;
 	width: 100%;
 }
 
 /*Form*/
 
+
 form {
-	margin: 30px;
+	margin: 30px auto;
 	max-width: 700px;
+
 
 	label {
 		color: $dark-green;
@@ -305,16 +309,16 @@ form {
 
 	button {
 		background-color: $grey;
-			border: solid 3px $light-green;
-			font-family: $dosis;
-			font-weight: 600;
-			color: $light-green;
-			list-style: none;
-			display: inline-block;
-			font-size: 1.125rem;
-			letter-spacing: .1em;
-			margin-top: 30px;
-			padding: 12px 15px;
+		border: solid 3px $light-green;
+		font-family: $dosis;
+		font-weight: 600;
+		color: $light-green;
+		list-style: none;
+		display: inline-block;
+		font-size: 1.125rem;
+		letter-spacing: .1em;
+		margin-top: 30px;
+		padding: 12px 15px;
 	}
 }
 
@@ -329,7 +333,10 @@ form {
 
 
 @media screen and (min-width: 960px) {
-
+	.create-event-header {
+		max-width: 700px;
+		margin: 30px auto 0 auto;
+	}
 }
 
 
