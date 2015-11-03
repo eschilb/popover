@@ -21,44 +21,46 @@
       </ul>
       </nav>
     </div>
-    <form action="/my-handling-form-page" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" />
-    </div>
-    <div>
-        <label for="date">Date:</label>
-        <input type="date" id="date" />
-    </div>
-    <div>
-        <label for="time">Time:</label>
-        <input type="time" id="time"></input>
-    </div>
-        <div>
-        <label for="description">Event Description:</label>
-        <textarea id="description" onfocus="this.value=''; this.onfocus=null;">Give some details to build excitement about your dinner</textarea>
-    </div>
-    </div>
-        <div>
-        <label for="menu">Menu:</label>
-        <textarea id="menu">Let guests know the menu ahead of time</textarea>
-    </div>
-    <div>
-        <label for="guest-count">How many guests:</label>
-        <input type="text" id="guest-count" />
-    </div>
-    <div>
-        <label for="donation">Suggested Donation:</label>
-        <input type="text" id="donation" />
-    </div>
-    <div>
-        <label for="file">Select Image:</label>
-        <input type="file" id="file"></input>
-    </div>
-    <div class="button">
-        <button type="submit">Create Event</button>
-    </div>
-</form>
+    <div class="create-event-header">You’re creating a Popover dinner event that you'll host for other members! After you create the event, you can view the guestlist and get planning.</div>
+    <form>
+	    <div>
+	        <label for="name">Name:</label>
+	        <input type="text" id="name" />
+	    </div>
+	    <div>
+	        <label for="date">Date:</label>
+	        <input type="date" id="date" />
+	    </div>
+	    <div>
+	        <label for="time">Time:</label>
+	        <input type="time" id="time"></input>
+	    </div>
+	        <div>
+	        <label for="description">Event Description:</label>
+	        <textarea id="description" onfocus="this.value=''; this.onfocus=null;">Give some details to build excitement about your dinner</textarea>
+	    </div>
+	    </div>
+	        <div>
+	        <label for="menu">Menu:</label>
+	        <textarea id="menu" onfocus="this.value=''; this.onfocus=null;">Let guests know the menu you'll serve</textarea>
+	    </div>
+	    <div>
+	        <label for="guest-count">Number of guests:</label>
+	        <input type="text" id="guest-count" />
+	    </div>
+	    <div>
+	        <label for="donation">Suggested Donation:</label>
+	        <input type="text" id="donation" />
+	    </div>
+	    <div>
+	        <label for="file">Select Image:</label>
+	        <input type="file" id="file"></input>
+	    </div>
+	    <div class="button">
+	        <button type="submit">Create Event</button>
+	    </div>
+	</form>
+
 <script>
 $(".menuIcon").click(function(event) {
   event.preventDefault();
