@@ -9,9 +9,23 @@
 	    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	</head>
 	<body>
-
+    <div class="header">
+      <a href="index.html" class="header-logo"><div class="logo-place"></div></a>
+      <nav class = "nav-primary" role = "navigation">
+      <a href="" class="menuIcon">☰</a>
+      <ul class="nav">
+        <a href="index.html"><li class="selected">Home</li></a>
+        <a href="events.html"><li>Events</li></a>
+        <a href="create.html"><li>Create Event</li></a>
+        <a href="#"><li>Profile</li></a>
+      </ul>
+      </nav>
+    </div>
 <script>
-
+$(".menuIcon").click(function(event) {
+  event.preventDefault();
+  $(".nav").toggleClass("list");
+});
 </script>
 	</body>
 </html>

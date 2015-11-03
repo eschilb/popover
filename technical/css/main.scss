@@ -256,6 +256,14 @@ body {
 	}
 }
 
+label {
+	display: block;
+	font-family: $montserrat;
+	font-size: 1rem;
+	font-weight: 400;
+
+}
+
 /*Media queries*/
 
 @media screen and (min-width: 480px) {
