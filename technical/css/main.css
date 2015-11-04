@@ -98,7 +98,7 @@ body {
     font-weight: 600;
     text-decoration: none; }
   .scroll-on-page aside {
-    margin-top: 60px; }
+    margin-top: 30px; }
     @media screen and (min-width: 30em) {
       .scroll-on-page aside {
         float: left;
@@ -107,9 +107,11 @@ body {
         width: 31.76157%; }
         .scroll-on-page aside:last-child {
           margin-right: 0; } }
+  .scroll-on-page .last-event {
+    margin-bottom: 30px; }
   .scroll-on-page .scroll-on-page-link {
     display: block;
-    font-size: 18px;
+    font-size: 1.125rem;
     outline: none;
     padding: 0.75em 30px; }
     .scroll-on-page .scroll-on-page-link:first-child {
@@ -131,15 +133,15 @@ body {
       width: 100%;
       text-align: center; }
     .scroll-on-page article div {
-      border-bottom: solid 3px #1fb870;
-      border-left: solid 10px #1fb870;
-      border-right: solid 3px #1fb870;
-      border-top: solid 3px #1fb870;
+      border-bottom: solid 3px #394a43;
+      border-left: solid 10px #394a43;
+      border-right: solid 3px #394a43;
+      border-top: solid 3px #394a43;
       float: left;
       margin: 15px 0;
       width: 100%; }
     .scroll-on-page article p {
-      color: #394a43;
+      color: #1fb870;
       font-family: "Montserrat", sans-serif;
       line-height: 1.5em;
       padding-left: 15px;
@@ -176,9 +178,9 @@ body {
 
 /*Form header*/
 .create-event-header {
-  background-color: #394a43;
-  color: #f5f6f4;
-  font-family: "Dosis", sans-serif;
+  background-color: #1fb870;
+  color: #262626;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   margin-top: 30px;
@@ -187,7 +189,7 @@ body {
 
 /*Form*/
 form {
-  margin: 30px auto;
+  margin: 30px;
   max-width: 700px; }
   form label {
     color: #394a43;
@@ -212,22 +214,95 @@ form {
   form input[type=file] {
     padding: 7px 10px;
     color: #4f675d; }
-  form button {
-    background-color: #f5f6f4;
-    border: solid 3px #bedc32;
-    font-family: "Dosis", sans-serif;
-    font-weight: 600;
-    color: #bedc32;
-    list-style: none;
-    display: inline-block;
+  form .create-button {
+    margin-top: 30px; }
+
+/*Event Listing*/
+.back-to-events {
+  border-bottom: 1px solid transparent;
+  color: #bedc32;
+  float: left;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: .05em;
+  margin: 30px;
+  padding-bottom: 5px;
+  text-decoration: none; }
+  .back-to-events:hover {
+    border-bottom: 1px solid #bedc32; }
+
+.page-header {
+  clear: both;
+  color: #1fb870;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 30px;
+  text-align: center; }
+
+.listing-box {
+  border: 1px solid #737373;
+  margin: 30px; }
+  .listing-box .label {
+    border-bottom: 1px solid #737373;
+    background-color: #262626;
+    color: #1fb870;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
-    letter-spacing: .1em;
-    margin-top: 30px;
+    font-weight: 700;
+    padding: 12px 15px; }
+  .listing-box .event-description {
+    color: #394a43;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
     padding: 12px 15px; }
 
+.profile-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle; }
+
+.button button {
+  background-color: #bedc32;
+  border: solid 3px #262626;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #262626;
+  list-style: none;
+  display: inline-block;
+  font-size: 1.125rem;
+  letter-spacing: .1em;
+  padding: 12px 15px; }
+
+footer {
+  background-color: #1fb870;
+  color: #f5f6f4;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.125rem;
+  height: 60px;
+  letter-spacing: .05em;
+  margin-top: 60px; }
+  footer .copyright {
+    float: left;
+    padding: 20px 30px 20px 30px; }
+    footer .copyright p {
+      margin: 0; }
+  footer .social {
+    float: right;
+    padding: 20px 30px 20px 30px; }
+    footer .social a {
+      color: #f5f6f4;
+      text-decoration: none; }
+
 /*Media queries*/
-@media screen and (min-width: 960px) {
-  .create-event-header {
+@media screen and (min-width: 480px) {
+  .page-header {
+    font-size: 2.25rem; } }
+@media screen and (min-width: 760px) {
+  .create-event-header, .listing-box, form {
     max-width: 700px;
     margin: 30px auto 0 auto; } }
 

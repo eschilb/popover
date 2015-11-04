@@ -155,17 +155,20 @@ body {
 	}
 
 	aside {
-		margin-top: 60px;
+		margin-top: 30px;
 		@include media($large-screen) {
 	  		@include span-columns(4);
 		}
 	}
 
+	.last-event {
+		margin-bottom: 30px;
+	}
+
 	.scroll-on-page-link {
 
 		display: block;
-		font-size: 18px;
-		// margin-right: $base-spacing;
+		font-size: 1.125rem;
 		outline: none;
 		padding: ($base-spacing / 2) 30px;
 
@@ -198,10 +201,10 @@ body {
 		}
 
 		div {
-			border-bottom: solid 3px $green;
-			border-left: solid 10px $green;
-			border-right: solid 3px $green;
-			border-top: solid 3px $green;
+			border-bottom: solid 3px $dark-green;
+			border-left: solid 10px $dark-green;
+			border-right: solid 3px $dark-green;
+			border-top: solid 3px $dark-green;
 			float: left;
 			// box-shadow: 3px 3px #66cccc;
 			margin: 15px 0;
@@ -209,7 +212,7 @@ body {
 		}
 
 		p {
-			color: $dark-green;
+			color: $green;
 			font-family: $montserrat; 
 			line-height: $base-line-height;
 			padding-left: 15px;
@@ -255,12 +258,13 @@ body {
 		}
 	}
 }
+
 /*Form header*/
 
 .create-event-header {
-	background-color: $dark-green;
-	color: $grey;
-	font-family: $dosis;
+	background-color: $green;
+	color: $key-color;
+	font-family: $montserrat;
 	font-size: 18px;
 	line-height: 1.5;
 	margin-top: 30px;
@@ -272,7 +276,7 @@ body {
 
 
 form {
-	margin: 30px auto;
+	margin: 30px;
 	max-width: 700px;
 
 
@@ -307,36 +311,130 @@ form {
 		color: lighten($dark-green, 10%);
 	}
 
-	button {
-		background-color: $grey;
-		border: solid 3px $light-green;
-		font-family: $dosis;
-		font-weight: 600;
-		color: $light-green;
-		list-style: none;
-		display: inline-block;
-		font-size: 1.125rem;
-		letter-spacing: .1em;
+	.create-button {
 		margin-top: 30px;
+	}
+}
+
+/*Event Listing*/
+
+.back-to-events {
+	border-bottom: 1px solid transparent;
+	color: $light-green;
+	float: left;
+	font-family: $dosis;
+	font-size: 1.125rem;
+	letter-spacing: .05em;
+	margin: 30px;
+	padding-bottom: 5px;
+	text-decoration: none;
+
+	&:hover {
+		border-bottom: 1px solid $light-green;
+	}
+}
+
+.page-header {
+	clear: both;
+	color: $green;
+	font-family: $montserrat;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin: 30px;
+  	text-align: center;
+}
+
+.listing-box {
+	border: 1px solid lighten($key-color, 30%);
+	margin: 30px;
+	.label {
+		border-bottom: 1px solid lighten($key-color, 30%);
+		background-color: $key-color;
+		color: $green;
+		font-family: $montserrat;
+		font-size: 1.125rem;
+		font-weight: 700;
+		padding: 12px 15px;
+	}
+
+	.event-description {
+		color: $dark-green;
+		font-family: $montserrat;
+		font-size: 1.125rem;
+		font-weight: 400;
+		line-height: 1.5;
 		padding: 12px 15px;
 	}
 }
 
+.profile-image {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.button {
+	button {
+		background-color: $light-green;
+		border: solid 3px $key-color;
+		font-family: $dosis;
+		font-weight: 600;
+		color: $key-color;
+		list-style: none;
+		display: inline-block;
+		font-size: 1.125rem;
+		letter-spacing: .1em;
+		padding: 12px 15px;
+	}
+}
+
+footer {
+	background-color: $green;
+	color: $grey;
+	font-family: $dosis;
+	font-size: 1.125rem;
+	height: 60px;
+	letter-spacing: .05em;
+	margin-top: 60px;
+
+	.copyright {
+		float: left;
+		padding: 20px 30px 20px 30px;
+		p {
+			margin: 0;
+		}
+	}
+
+	.social {
+		float: right;
+		padding: 20px 30px 20px 30px;
+		a {
+		color: $grey;
+		text-decoration: none;
+	}
+	}
+}
 
 /*Media queries*/
 
-@media screen and (min-width: 480px) {
 
+@media screen and (min-width: 480px) {
+	.page-header {
+		font-size: 2.25rem;
+	}
 
 }
 
 
 
-@media screen and (min-width: 960px) {
-	.create-event-header {
+@media screen and (min-width: 760px) {
+	.create-event-header, .listing-box, form {
 		max-width: 700px;
 		margin: 30px auto 0 auto;
 	}
+
+
 }
 
 
