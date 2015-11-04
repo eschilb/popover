@@ -219,10 +219,12 @@ body {
 
 /*Form*/
 form {
+  background-color: #3a3a3c;
   margin: 30px;
-  max-width: 700px; }
+  max-width: 700px;
+  padding: 15px; }
   form label {
-    color: #3a3a3c;
+    color: #1fb870;
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -243,7 +245,8 @@ form {
     height: 200px; }
   form input[type=file] {
     padding: 7px 10px;
-    color: #535356; }
+    color: #2edc8a;
+    font-family: "Montserrat", sans-serif; }
   form .create-button {
     margin-top: 30px; }
 
