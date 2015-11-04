@@ -90,6 +90,36 @@ body {
   width: 100%; }
 
 /*Events Section*/
+.btn {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  margin-right: 20px;
+  transition: 0.3s; }
+  .btn:after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    z-index: -1;
+    background: transparent; }
+  .btn:before {
+    content: "";
+    position: absolute; }
+
+/**** from left to right style ****/
+.btn-l-r:hover p {
+  color: #bedc32; }
+.btn-l-r:hover:after {
+  background: #3a3a3c;
+  width: 100%; }
+.btn-l-r:after {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%; }
+
 .scroll-on-page {
   display: inline-block; }
   .scroll-on-page a {
@@ -133,10 +163,10 @@ body {
       width: 100%;
       text-align: center; }
     .scroll-on-page article div {
-      border-bottom: solid 3px #394a43;
-      border-left: solid 10px #394a43;
-      border-right: solid 3px #394a43;
-      border-top: solid 3px #394a43;
+      border-bottom: solid 3px #3a3a3c;
+      border-left: solid 10px #3a3a3c;
+      border-right: solid 3px #3a3a3c;
+      border-top: solid 3px #3a3a3c;
       float: left;
       margin: 15px 0;
       width: 100%; }
@@ -192,7 +222,7 @@ form {
   margin: 30px;
   max-width: 700px; }
   form label {
-    color: #394a43;
+    color: #3a3a3c;
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -206,14 +236,14 @@ form {
     border: 1px solid #1fb870;
     font-family: "Montserrat", sans-serif;
     font-size: .812rem;
-    color: #4f675d;
+    color: #535356;
     padding: 7px 10px; }
   form textarea {
     width: 100%;
     height: 200px; }
   form input[type=file] {
     padding: 7px 10px;
-    color: #4f675d; }
+    color: #535356; }
   form .create-button {
     margin-top: 30px; }
 
@@ -252,7 +282,7 @@ form {
     font-weight: 700;
     padding: 12px 15px; }
   .listing-box .event-description {
-    color: #394a43;
+    color: #3a3a3c;
     font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
@@ -267,10 +297,10 @@ form {
 
 .button button {
   background-color: #bedc32;
-  border: solid 3px #262626;
+  border: solid 3px #3a3a3c;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
-  color: #262626;
+  color: #3a3a3c;
   list-style: none;
   display: inline-block;
   font-size: 1.125rem;

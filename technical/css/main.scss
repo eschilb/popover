@@ -7,7 +7,7 @@ $dosis: 'Dosis', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
 
 $key-color: #262626;
-$dark-green: #394a43;
+$dark-green: #3a3a3c;
 $green: #1fb870;
 $light-green: #bedc32;
 $grey: #f5f6f4;
@@ -90,9 +90,6 @@ $grey: #f5f6f4;
 			font-size: 0;
 			background: $green;
 			padding: 0;
-			// position: fixed;
-			// top: 0;
-			// left: 0;
 			width: 100%;
 			text-align: center;
 			display: block;
@@ -135,7 +132,47 @@ body {
 
 /*Events Section*/
 
+.btn {
+	position: relative;
+	background: transparent;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid;
+	margin-right: 20px;
+	transition: 0.3s;
+	&:after {
+		content: "";
+		position: absolute;
+		transition: 0.3s;
+		z-index: -1;
+		background: transparent;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+	}
+}
 
+/**** from left to right style ****/
+
+.btn-l-r { 
+	&:hover {
+		p { 
+			color: $light-green;
+		}
+	}
+
+	&:hover:after {
+		background: $dark-green;
+		width: 100%;
+	}
+	&:after {
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+	}
+}
 
 .scroll-on-page {
 	$base-line-height: 1.5em !default;
@@ -206,7 +243,6 @@ body {
 			border-right: solid 3px $dark-green;
 			border-top: solid 3px $dark-green;
 			float: left;
-			// box-shadow: 3px 3px #66cccc;
 			margin: 15px 0;
 			width: 100%;
 		}
@@ -377,10 +413,10 @@ form {
 .button {
 	button {
 		background-color: $light-green;
-		border: solid 3px $key-color;
+		border: solid 3px $dark-green;
 		font-family: $dosis;
 		font-weight: 600;
-		color: $key-color;
+		color: $dark-green;
 		list-style: none;
 		display: inline-block;
 		font-size: 1.125rem;
