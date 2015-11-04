@@ -110,7 +110,7 @@ body {
 
 /**** from left to right style ****/
 .btn-l-r:hover p {
-  color: #bedc32; }
+  color: #1fb870; }
 .btn-l-r:hover:after {
   background: #3a3a3c;
   width: 100%; }
@@ -275,7 +275,7 @@ form {
   margin: 30px; }
   .listing-box .label {
     border-bottom: 1px solid #737373;
-    background-color: #262626;
+    background-color: #3a3a3c;
     color: #1fb870;
     font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
