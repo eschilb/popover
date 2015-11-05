@@ -70,6 +70,11 @@ html {
       float: left;
       margin: 15px 0;
       width: 100%; }
+      .accordion-tabs-minimal .tab-content div div {
+        border: none;
+        margin: 0; }
+      .accordion-tabs-minimal .tab-content div img {
+        display: none; }
     .accordion-tabs-minimal .tab-content p {
       color: #1fb870;
       font-family: "Montserrat", sans-serif;
@@ -80,8 +85,7 @@ html {
       font-size: 18px;
       font-weight: 400;
       margin-top: 30px;
-      margin-bottom: 10px;
-      width: 100%; }
+      margin-bottom: 10px; }
     .accordion-tabs-minimal .tab-content section p:last-of-type {
       font-size: 24px;
       font-weight: 700;
@@ -234,6 +238,12 @@ body {
 form {
   margin: 30px;
   max-width: 700px; }
+  form .ndt-container {
+    width: 100%; }
+    form .ndt-container label, form .ndt-container input {
+      width: 100%; }
+  form .gdf-container label, form .gdf-container input {
+    width: 100%; }
   form label {
     color: #1fb870;
     display: block;
@@ -249,21 +259,36 @@ form {
     border: 1px solid #bedc32;
     font-family: "Montserrat", sans-serif;
     font-size: .812rem;
-    color: #535356;
+    color: #535356; }
+  form input[type=text],
+  form textarea {
     padding: 7px 10px; }
+  form input[type=date],
+  form input[type=time] {
+    padding: 5.5px 10px; }
   form textarea {
     width: 100%;
     height: 200px; }
-  form input[type=file] {
-    padding: 7px 10px;
-    color: #2edc8a;
-    font-family: "Montserrat", sans-serif; }
   form .create-button {
     margin-top: 30px; }
 
 .form {
   background-color: #3a3a3c;
   padding: 15px; }
+
+::-webkit-input-placeholder {
+  color: #535356; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #535356; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #535356; }
+
+:-ms-input-placeholder {
+  color: #535356; }
 
 /*Event Listing*/
 .back-to-events {
@@ -346,13 +371,36 @@ footer {
 /*Media queries*/
 @media screen and (min-width: 480px) {
   .page-header {
-    font-size: 2.25rem; } }
+    font-size: 2.25rem; }
+
+  form .ndt-container {
+    max-width: 400px; }
+    form .ndt-container label, form .ndt-container input {
+      width: 100%; }
+  form .gdf-container {
+    max-width: 400px; }
+    form .gdf-container label, form .gdf-container input {
+      width: 100%; } }
 @media screen and (min-width: 760px) {
   .create-event-header, .listing-box, form {
     max-width: 700px;
     margin: 30px auto 0 auto; }
 
   .back-to-events:hover {
-    border-bottom: 1px solid #bedc32; } }
+    border-bottom: 1px solid #bedc32; }
+
+  form .ndt-container {
+    float: left;
+    padding-right: 15px;
+    width: 335px; }
+    form .ndt-container label, form .ndt-container input {
+      width: 100%; }
+  form .gdf-container {
+    float: left;
+    width: 335px; }
+    form .gdf-container label, form .gdf-container input {
+      width: 100%; }
+  form .clear {
+    clear: both; } }
 
 /*# sourceMappingURL=main.css.map */

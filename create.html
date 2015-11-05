@@ -29,37 +29,46 @@
     </div>
     <div class="create-container">    
 	    <form class="form">
-		    <div>
-		        <label for="name">Name:</label>
-		        <input type="text" id="name" />
+		    <div class="ndt-container">
+			    <div>
+			        <label for="name">Name:</label>
+			        <input type="text" id="name" placeholder="Mambo Italiano"/>
+			    </div>
+			    <div>
+			        <label for="date">Date:</label>
+			        <input type="date" id="date" />
+			    </div>
+			    <div>
+			        <label for="time">Time:</label>
+			        <input type="time" id="time"></input>
+			    </div>
 		    </div>
+			    <div class="gdf-container">
+			    <div>
+			        <label for="guest-count">Number of guests:</label>
+			        <input type="text" id="guest-count" placeholder="20"/>
+			    </div>
+			    <div>
+			        <label for="donation">Suggested Donation:</label>
+			        <input type="text" id="donation" placeholder="$15"/>
+			    </div>
+			    <div>
+			        <label for="file">Select Image:</label>
+			        <button class="choose-file" type="submit">Choose a File</button>
+			    </div>
+			</div>
 		    <div>
-		        <label for="date">Date:</label>
-		        <input type="date" id="date" />
-		    </div>
-		    <div>
-		        <label for="time">Time:</label>
-		        <input type="time" id="time"></input>
-		    </div>
-		    <div>
-		        <label for="description">Event Description:</label>
-		        <textarea id="description" onfocus="this.value=''; this.onfocus=null;">Give some details to build excitement about your dinner</textarea>
+		        <label class="clear" for="description">Event Description:</label>
+		        <textarea id="description" onfocus="this.value=''; this.onfocus=null;">Ciao bella! I've got a pasta maker so let's put it to good use and feast like Italians! To start, we'll have wine, fruit, and cheese and then move on to the main event. I'll also be spinning some sweet Italian beats.</textarea>
 		    </div>
 		    <div>
 		        <label for="menu">Menu:</label>
-		        <textarea id="menu" onfocus="this.value=''; this.onfocus=null;">Let guests know the menu you'll serve</textarea>
-		    </div>
-		    <div>
-		        <label for="guest-count">Number of guests:</label>
-		        <input type="text" id="guest-count" />
-		    </div>
-		    <div>
-		        <label for="donation">Suggested Donation:</label>
-		        <input type="text" id="donation" />
-		    </div>
-		    <div>
-		        <label for="file">Select Image:</label>
-		        <button class="create-button" type="submit">Choose a File</button>
+		        <textarea id="menu" onfocus="this.value=''; this.onfocus=null;">
+Antipasto: A Selection of Fruit, Cheese, and Wine
+
+Main course: Linguine Carbonara With Cauliflower and Pancetta 
+
+Dessert: Panna Cotta</textarea>
 		    </div>
 		    <div class="button">
 		        <button class="create-button" type="submit">Create Event</button>
@@ -67,9 +76,15 @@
 		</form>
 	</div>
 </div>
-<script >$(document).ready(function() {
-    $("#time").val("19:00");
-});</script>
+<script >
+$(document).ready(function() {
+    $("#time").val("18:00");
+});
+
+$(document).ready(function() {
+    $("#date").val("2015-11-18");
+});
+</script>
 <script>
 $(".menuIcon").click(function(event) {
   event.preventDefault();

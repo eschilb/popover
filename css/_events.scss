@@ -70,6 +70,7 @@
     display: none;
     padding: $base-spacing $gutter;
     width: 100%;
+    	
     	section {
 			padding: 0 30px;
 			box-sizing: border-box;
@@ -94,6 +95,15 @@
 			float: left;
 			margin: 15px 0;
 			width: 100%;
+
+			div {
+				border: none;
+				margin: 0;
+			}
+
+			img {
+				display: none;
+			}
 		}
 
 		p {
@@ -109,7 +119,7 @@
 			font-weight: 400;
 		  	margin-top: 30px; 
 		  	margin-bottom: 10px;
-		  	width: 100%;
+		  	// width: 100%;
 		}
 
 		section p:last-of-type {
@@ -118,8 +128,6 @@
 		  	margin-bottom: 30px;
 		  	margin-top: 0; 
 		}
-
-
 
     @include media($tab-mode) {
       border-top: $tab-border;
@@ -134,20 +142,21 @@
 
 
 @media screen and (min-width: 480px) {
+	
 	.page-header {
 		font-size: 2.25rem;
 	}
 
-
-
 	.accordion-tabs-minimal {
 		margin: 16px auto;
 		padding: 15px;
+		
 		.tab-content {
 			
 			border-bottom: 1px solid lighten($dark-green, 40%);
 			border-left: 1px solid lighten($dark-green, 40%);
 			border-right: 1px solid lighten($dark-green, 40%);
+			
 			section {
 
 				h4 {
@@ -155,23 +164,20 @@
 				}
 
 				div {
-
 					width: 100%;
 					float: left;
-
 				}
 
 			}
 		}
 	}
-
 }
-
 
 
 @media screen and (min-width: 760px) {
 
 	/*Button styling and hover states*/
+	
 	.btn {
 		position: relative;
 		background: transparent;
@@ -212,6 +218,24 @@
 			width: 0%;
 			height: 100%;
 		}
+	}
+
+	.accordion-tabs-minimal {
+		.tab-content {
+
+			// p {
+			// 	display: inline-block;
+			// }
+
+			// div {
+			// 	img {
+			// 		display: inline-block;
+			// 		float: left;
+			// 		max-width: 25%;
+			// 	}
+			// }
+		}
+
 	}
 
 }
