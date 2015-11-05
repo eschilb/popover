@@ -196,10 +196,6 @@ form {
 	margin: 30px;
 	padding-bottom: 5px;
 	text-decoration: none;
-
-	&:hover {
-		border-bottom: 1px solid $light-green;
-	}
 }
 
 .page-header {
@@ -215,6 +211,7 @@ form {
 .listing-box {
 	border: 1px solid lighten($key-color, 30%);
 	margin: 30px;
+	
 	.label {
 		border-bottom: 1px solid lighten($key-color, 30%);
 		background-color: $dark-green;
@@ -304,6 +301,12 @@ footer {
 		margin: 30px auto 0 auto;
 	}
 
+	.back-to-events {
+
+		&:hover {
+			border-bottom: 1px solid $light-green;
+		}
+	}
 
 }
 

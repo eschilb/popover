@@ -278,8 +278,6 @@ form {
   margin: 30px;
   padding-bottom: 5px;
   text-decoration: none; }
-  .back-to-events:hover {
-    border-bottom: 1px solid #bedc32; }
 
 .page-header {
   clear: both;
@@ -354,6 +352,9 @@ footer {
 @media screen and (min-width: 760px) {
   .create-event-header, .listing-box, form {
     max-width: 700px;
-    margin: 30px auto 0 auto; } }
+    margin: 30px auto 0 auto; }
+
+  .back-to-events:hover {
+    border-bottom: 1px solid #bedc32; } }
 
 /*# sourceMappingURL=main.css.map */
