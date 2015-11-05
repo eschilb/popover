@@ -182,8 +182,6 @@ html {
     margin: .3em;
     display: block;
     transition: all 0.3s; }
-    .header .nav li:hover {
-      border: solid 3px #f5f6f4; }
   .header .nav a {
     text-decoration: none; }
   .header .list {
