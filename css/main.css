@@ -7,36 +7,6 @@ html {
   box-sizing: inherit; }
 
 /*Events page styling*/
-/*button styling and hover state*/
-.btn {
-  position: relative;
-  background: transparent;
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 20px;
-  transition: 0.3s; }
-  .btn:after {
-    content: "";
-    position: absolute;
-    transition: 0.3s;
-    z-index: -1;
-    background: transparent; }
-  .btn:before {
-    content: "";
-    position: absolute; }
-
-/**** from left to right style ****/
-.btn-l-r:hover p {
-  color: #1fb870; }
-.btn-l-r:hover:after {
-  background-color: #3a3a3c;
-  width: 100%; }
-.btn-l-r:after {
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%; }
-
 /*Tabs styling*/
 .accordion-tabs-minimal {
   line-height: 1.5;
@@ -126,6 +96,36 @@ html {
 @media screen and (min-width: 480px) {
   .page-header {
     font-size: 2.25rem; }
+
+  /*Button styling and hover states*/
+  .btn {
+    position: relative;
+    background: transparent;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s; }
+    .btn:after {
+      content: "";
+      position: absolute;
+      transition: 0.3s;
+      z-index: -1;
+      background: transparent; }
+    .btn:before {
+      content: "";
+      position: absolute; }
+
+  /**** from left to right style ****/
+  .btn-l-r:hover p {
+    color: #1fb870; }
+  .btn-l-r:hover:after {
+    background-color: #3a3a3c;
+    width: 100%; }
+  .btn-l-r:after {
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%; }
 
   .accordion-tabs-minimal {
     margin: 16px auto;

@@ -1,49 +1,5 @@
 /*Events page styling*/
 
-/*button styling and hover state*/
-
-.btn {
-	position: relative;
-	background: transparent;
-	display: inline-block;
-	text-decoration: none;
-	margin-right: 20px;
-	transition: 0.3s;
-	&:after {
-		content: "";
-		position: absolute;
-		transition: 0.3s;
-		z-index: -1;
-		background: transparent;
-	}
-	&:before {
-		content: "";
-		position: absolute;
-	}
-}
-
-/**** from left to right style ****/
-
-.btn-l-r { 
-	&:hover {
-		p { 
-			color: $green;
-		}
-	}
-
-	&:hover:after {
-		background-color: $dark-green;
-		width: 100%;
-	}
-
-	&:after {
-		top: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-	}
-}
-
 
 
 /*Tabs styling*/
@@ -180,6 +136,49 @@
 @media screen and (min-width: 480px) {
 	.page-header {
 		font-size: 2.25rem;
+	}
+
+	/*Button styling and hover states*/
+	.btn {
+		position: relative;
+		background: transparent;
+		display: inline-block;
+		text-decoration: none;
+		margin-right: 20px;
+		transition: 0.3s;
+		&:after {
+			content: "";
+			position: absolute;
+			transition: 0.3s;
+			z-index: -1;
+			background: transparent;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+		}
+	}
+
+	/**** from left to right style ****/
+
+	.btn-l-r { 
+		&:hover {
+			p { 
+				color: $green;
+			}
+		}
+
+		&:hover:after {
+			background-color: $dark-green;
+			width: 100%;
+		}
+
+		&:after {
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+		}
 	}
 
 	.accordion-tabs-minimal {
