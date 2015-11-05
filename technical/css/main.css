@@ -13,7 +13,6 @@ html {
   background: transparent;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid;
   margin-right: 20px;
   transition: 0.3s; }
   .btn:after {
@@ -30,7 +29,7 @@ html {
 .btn-l-r:hover p {
   color: #1fb870; }
 .btn-l-r:hover:after {
-  background: #3a3a3c;
+  background-color: #3a3a3c;
   width: 100%; }
 .btn-l-r:after {
   top: 0;
@@ -38,7 +37,6 @@ html {
   width: 0%;
   height: 100%; }
 
-/*scrolling page styling*/
 /*Tabs styling*/
 .accordion-tabs-minimal {
   line-height: 1.5;
