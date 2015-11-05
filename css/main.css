@@ -97,6 +97,19 @@ html {
   .page-header {
     font-size: 2.25rem; }
 
+  .accordion-tabs-minimal {
+    margin: 16px auto;
+    padding: 15px; }
+    .accordion-tabs-minimal .tab-content {
+      border-bottom: 1px solid #9f9fa3;
+      border-left: 1px solid #9f9fa3;
+      border-right: 1px solid #9f9fa3; }
+      .accordion-tabs-minimal .tab-content section h4 {
+        font-size: 36px; }
+      .accordion-tabs-minimal .tab-content section div {
+        width: 100%;
+        float: left; } }
+@media screen and (min-width: 760px) {
   /*Button styling and hover states*/
   .btn {
     position: relative;
@@ -125,20 +138,7 @@ html {
     top: 0;
     left: 0;
     width: 0%;
-    height: 100%; }
-
-  .accordion-tabs-minimal {
-    margin: 16px auto;
-    padding: 15px; }
-    .accordion-tabs-minimal .tab-content {
-      border-bottom: 1px solid #9f9fa3;
-      border-left: 1px solid #9f9fa3;
-      border-right: 1px solid #9f9fa3; }
-      .accordion-tabs-minimal .tab-content section h4 {
-        font-size: 36px; }
-      .accordion-tabs-minimal .tab-content section div {
-        width: 100%;
-        float: left; } }
+    height: 100%; } }
 /*Main navigation*/
 .header {
   width: 100%;
