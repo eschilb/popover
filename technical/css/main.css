@@ -1,3 +1,4 @@
+/*Variables*/
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,700);
 html {
   box-sizing: border-box; }
@@ -5,7 +6,132 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/*Variables*/
+/*Events page styling*/
+/*button styling and hover state*/
+.btn {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  margin-right: 20px;
+  transition: 0.3s; }
+  .btn:after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    z-index: -1;
+    background: transparent; }
+  .btn:before {
+    content: "";
+    position: absolute; }
+
+/**** from left to right style ****/
+.btn-l-r:hover p {
+  color: #1fb870; }
+.btn-l-r:hover:after {
+  background: #3a3a3c;
+  width: 100%; }
+.btn-l-r:after {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%; }
+
+/*scrolling page styling*/
+/*Tabs styling*/
+.accordion-tabs-minimal {
+  line-height: 1.5;
+  padding: 0;
+  max-width: 700px;
+  width: 100%; }
+  .accordion-tabs-minimal::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .accordion-tabs-minimal li.tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal li.tab-header-and-content {
+        display: inline; } }
+  .accordion-tabs-minimal a.tab-link {
+    background-color: white;
+    border-top: 1px solid gainsboro;
+    color: #333;
+    display: block;
+    padding: 0.75em 1.618em;
+    text-decoration: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal a.tab-link {
+        display: inline-block;
+        border-top: 0; } }
+    .accordion-tabs-minimal a.tab-link:hover {
+      color: #477DCA; }
+    .accordion-tabs-minimal a.tab-link:focus {
+      outline: none; }
+    .accordion-tabs-minimal a.tab-link.is-active {
+      border-bottom: 0; }
+      @media screen and (min-width: 40em) {
+        .accordion-tabs-minimal a.tab-link.is-active {
+          border: 1px solid gainsboro;
+          border-bottom-color: white;
+          margin-bottom: -1px; } }
+  .accordion-tabs-minimal .tab-content {
+    display: none;
+    padding: 1.5em 1.618em;
+    width: 100%; }
+    .accordion-tabs-minimal .tab-content section {
+      padding: 0 30px;
+      box-sizing: border-box;
+      overflow: hidden; }
+    .accordion-tabs-minimal .tab-content h4 {
+      color: #1fb870;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 60px 15px 30px 15px;
+      width: 100%;
+      text-align: center; }
+    .accordion-tabs-minimal .tab-content div {
+      border-bottom: solid 3px #3a3a3c;
+      border-left: solid 10px #3a3a3c;
+      border-right: solid 3px #3a3a3c;
+      border-top: solid 3px #3a3a3c;
+      float: left;
+      margin: 15px 0;
+      width: 100%; }
+    .accordion-tabs-minimal .tab-content p {
+      color: #1fb870;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5em;
+      padding-left: 15px;
+      padding-right: 15px; }
+    .accordion-tabs-minimal .tab-content section p:first-of-type {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 100%; }
+    .accordion-tabs-minimal .tab-content section p:last-of-type {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-top: 0; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal .tab-content {
+        border-top: 1px solid gainsboro;
+        float: left; } }
+
+/*Media queries*/
+@media screen and (min-width: 480px) {
+  .page-header {
+    font-size: 2.25rem; }
+
+  .accordion-tabs-minimal .tab-content section h4 {
+    font-size: 36px; }
+  .accordion-tabs-minimal .tab-content section div {
+    width: 100%;
+    float: left; } }
 /*Main navigation*/
 .header {
   width: 100%;
@@ -89,123 +215,6 @@ body {
   background-color: #f5f6f4;
   width: 100%; }
 
-/*Events Section*/
-.btn {
-  position: relative;
-  background: transparent;
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid;
-  margin-right: 20px;
-  transition: 0.3s; }
-  .btn:after {
-    content: "";
-    position: absolute;
-    transition: 0.3s;
-    z-index: -1;
-    background: transparent; }
-  .btn:before {
-    content: "";
-    position: absolute; }
-
-/**** from left to right style ****/
-.btn-l-r:hover p {
-  color: #1fb870; }
-.btn-l-r:hover:after {
-  background: #3a3a3c;
-  width: 100%; }
-.btn-l-r:after {
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%; }
-
-.scroll-on-page {
-  display: inline-block; }
-  .scroll-on-page a {
-    color: #262626;
-    font-family: "Dosis", sans-serif;
-    font-weight: 600;
-    text-decoration: none; }
-  .scroll-on-page aside {
-    margin-top: 30px; }
-    @media screen and (min-width: 30em) {
-      .scroll-on-page aside {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        .scroll-on-page aside:last-child {
-          margin-right: 0; } }
-  .scroll-on-page .last-event {
-    margin-bottom: 30px; }
-  .scroll-on-page .scroll-on-page-link {
-    display: block;
-    font-size: 1.125rem;
-    outline: none;
-    padding: 0.75em 30px; }
-    .scroll-on-page .scroll-on-page-link:first-child {
-      padding-top: 1.5em; }
-    .scroll-on-page .scroll-on-page-link:last-child {
-      margin-bottom: 1.5em;
-      border-bottom: 3px solid rgba(31, 184, 112, 0.2); }
-  .scroll-on-page article {
-    max-width: 700px;
-    width: 100%; }
-    .scroll-on-page article section {
-      padding: 0 30px; }
-    .scroll-on-page article h4 {
-      color: #1fb870;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      margin: 60px 15px 30px 15px;
-      width: 100%;
-      text-align: center; }
-    .scroll-on-page article div {
-      border-bottom: solid 3px #3a3a3c;
-      border-left: solid 10px #3a3a3c;
-      border-right: solid 3px #3a3a3c;
-      border-top: solid 3px #3a3a3c;
-      float: left;
-      margin: 15px 0;
-      width: 100%; }
-    .scroll-on-page article p {
-      color: #1fb870;
-      font-family: "Montserrat", sans-serif;
-      line-height: 1.5em;
-      padding-left: 15px;
-      padding-right: 15px; }
-    .scroll-on-page article section p:first-of-type {
-      font-size: 18px;
-      font-weight: 400;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      width: 100%; }
-    .scroll-on-page article section p:last-of-type {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 30px;
-      margin-top: 0; }
-    @media screen and (min-width: 30em) {
-      .scroll-on-page article {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%; }
-        .scroll-on-page article:last-child {
-          margin-right: 0; }
-        .scroll-on-page article section {
-          box-sizing: border-box;
-          overflow: hidden;
-          width: 100%;
-          padding: 0 30px; }
-        .scroll-on-page article h4 {
-          font-size: 36px; }
-        .scroll-on-page article div {
-          width: 100%;
-          float: left; } }
-
 /*Form header*/
 .create-event-header {
   background-color: #1fb870;
@@ -219,10 +228,8 @@ body {
 
 /*Form*/
 form {
-  background-color: #3a3a3c;
   margin: 30px;
-  max-width: 700px;
-  padding: 15px; }
+  max-width: 700px; }
   form label {
     color: #1fb870;
     display: block;
@@ -235,7 +242,7 @@ form {
   form input[type=date],
   form input[type=time],
   form textarea {
-    border: 1px solid #1fb870;
+    border: 1px solid #bedc32;
     font-family: "Montserrat", sans-serif;
     font-size: .812rem;
     color: #535356;
@@ -249,6 +256,10 @@ form {
     font-family: "Montserrat", sans-serif; }
   form .create-button {
     margin-top: 30px; }
+
+.form {
+  background-color: #3a3a3c;
+  padding: 15px; }
 
 /*Event Listing*/
 .back-to-events {

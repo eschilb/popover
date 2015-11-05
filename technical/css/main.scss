@@ -1,16 +1,6 @@
-@import 'bourbon/bourbon', 'neat/neat';
+@import 'variables', 'bourbon/bourbon', 'neat/neat', 'events';
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,700);
 
-/*Variables*/
-
-$dosis: 'Dosis', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
-
-$key-color: #262626;
-$dark-green: #3a3a3c;
-$green: #1fb870;
-$light-green: #bedc32;
-$grey: #f5f6f4;
 
 /*Main navigation*/
 
@@ -130,170 +120,7 @@ body {
 	width: 100%;
 }
 
-/*Events Section*/
 
-.btn {
-	position: relative;
-	background: transparent;
-	display: inline-block;
-	text-decoration: none;
-	border: 1px solid;
-	margin-right: 20px;
-	transition: 0.3s;
-	&:after {
-		content: "";
-		position: absolute;
-		transition: 0.3s;
-		z-index: -1;
-		background: transparent;
-	}
-	&:before {
-		content: "";
-		position: absolute;
-	}
-}
-
-/**** from left to right style ****/
-
-.btn-l-r { 
-	&:hover {
-		p { 
-			color: $green;
-		}
-	}
-
-	&:hover:after {
-		background: $dark-green;
-		width: 100%;
-	}
-	&:after {
-		top: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-	}
-}
-
-.scroll-on-page {
-	$base-line-height: 1.5em !default;
-	$base-spacing: 1.5em !default;
-	$action-color: #477DCA !default;
-	$dark-gray: #333 !default;
-	$large-screen: em(480) !default;
-	$base-font-color: $dark-green !default;
-
-	display: inline-block;
-
-	a {
-		color: $key-color;
-		font-family: $dosis;
-		font-weight: 600;
-		text-decoration: none;
-	}
-
-	aside {
-		margin-top: 30px;
-		@include media($large-screen) {
-	  		@include span-columns(4);
-		}
-	}
-
-	.last-event {
-		margin-bottom: 30px;
-	}
-
-	.scroll-on-page-link {
-
-		display: block;
-		font-size: 1.125rem;
-		outline: none;
-		padding: ($base-spacing / 2) 30px;
-
-		&:first-child {
-			padding-top: $base-spacing;
-		}
-
-		&:last-child {
-			margin-bottom: $base-spacing;
-			border-bottom: 3px solid transparentize($green, 0.8);
-		}
-	}
-
-	article {
-		max-width: 700px;
-		width: 100%;
-
-		section {
-			padding: 0 30px;
-		}
-
-		h4 {
-			color: $green;
-			font-family: $montserrat;
-			font-weight: 700;
-			font-size: 24px;
-			margin: 60px 15px 30px 15px;
-			width: 100%;
-		  	text-align: center;
-		}
-
-		div {
-			border-bottom: solid 3px $dark-green;
-			border-left: solid 10px $dark-green;
-			border-right: solid 3px $dark-green;
-			border-top: solid 3px $dark-green;
-			float: left;
-			margin: 15px 0;
-			width: 100%;
-		}
-
-		p {
-			color: $green;
-			font-family: $montserrat; 
-			line-height: $base-line-height;
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-
-		section p:first-of-type {
-			font-size: 18px;
-			font-weight: 400;
-		  	margin-top: 30px; 
-		  	margin-bottom: 10px;
-		  	width: 100%;
-		}
-
-		section p:last-of-type {
-			font-size: 24px;
-			font-weight: 700;
-		  	margin-bottom: 30px;
-		  	margin-top: 0; 
-		}
-
-		@include media($large-screen) {
-			@include span-columns(8);
-
-			section {
-
-				box-sizing: border-box;
-				overflow: hidden;
-				width: 100%;
-				padding: 0 30px;
-			}
-
-			h4 {
-				font-size: 36px;
-			}
-
-			div {
-
-				width: 100%;
-				float: left;
-
-			}
-		}
-	}
-}
 
 /*Form header*/
 
@@ -312,10 +139,9 @@ body {
 
 
 form {
-	background-color: $dark-green;
+	
 	margin: 30px;
 	max-width: 700px;
-	padding: 15px;
 
 	label {
 		color: $green;
@@ -331,7 +157,7 @@ form {
 	input[type=date],
 	input[type=time],
 	textarea {
-		border: 1px solid $green;
+		border: 1px solid $light-green;
 		font-family: $montserrat;
 		font-size: .812rem;
 		color: lighten($dark-green, 10%);
@@ -352,6 +178,11 @@ form {
 	.create-button {
 		margin-top: 30px;
 	}
+}
+
+.form {
+	background-color: $dark-green;
+	padding: 15px;
 }
 
 /*Event Listing*/
@@ -453,6 +284,7 @@ footer {
 	}
 	}
 }
+
 
 /*Media queries*/
 
