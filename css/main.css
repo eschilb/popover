@@ -219,8 +219,7 @@ html {
       display: none; } }
 /*Global styling*/
 body {
-  background-color: #f5f6f4;
-  width: 100%; }
+  background-color: #f5f6f4; }
 
 /*Form header*/
 .create-event-header {
@@ -235,7 +234,6 @@ body {
 
 /*Form*/
 form {
-  margin: 30px;
   max-width: 700px; }
   form label {
     color: #1fb870;
