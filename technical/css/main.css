@@ -51,29 +51,31 @@ html {
     display: table; }
   .accordion-tabs-minimal li.tab-header-and-content {
     list-style: none; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 30em) {
       .accordion-tabs-minimal li.tab-header-and-content {
         display: inline; } }
   .accordion-tabs-minimal a.tab-link {
     background-color: white;
-    border-top: 1px solid gainsboro;
-    color: #333;
+    border-top: 1px solid #9f9fa3;
+    color: #3a3a3c;
     display: block;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
     padding: 0.75em 1.618em;
     text-decoration: none; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 30em) {
       .accordion-tabs-minimal a.tab-link {
         display: inline-block;
         border-top: 0; } }
     .accordion-tabs-minimal a.tab-link:hover {
-      color: #477DCA; }
+      color: #1fb870; }
     .accordion-tabs-minimal a.tab-link:focus {
       outline: none; }
     .accordion-tabs-minimal a.tab-link.is-active {
       border-bottom: 0; }
-      @media screen and (min-width: 40em) {
+      @media screen and (min-width: 30em) {
         .accordion-tabs-minimal a.tab-link.is-active {
-          border: 1px solid gainsboro;
+          border: 1px solid #9f9fa3;
           border-bottom-color: white;
           margin-bottom: -1px; } }
   .accordion-tabs-minimal .tab-content {
@@ -117,9 +119,9 @@ html {
       font-weight: 700;
       margin-bottom: 30px;
       margin-top: 0; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 30em) {
       .accordion-tabs-minimal .tab-content {
-        border-top: 1px solid gainsboro;
+        border-top: 1px solid #9f9fa3;
         float: left; } }
 
 /*Media queries*/
@@ -127,11 +129,18 @@ html {
   .page-header {
     font-size: 2.25rem; }
 
-  .accordion-tabs-minimal .tab-content section h4 {
-    font-size: 36px; }
-  .accordion-tabs-minimal .tab-content section div {
-    width: 100%;
-    float: left; } }
+  .accordion-tabs-minimal {
+    margin: 16px auto;
+    padding: 15px; }
+    .accordion-tabs-minimal .tab-content {
+      border-bottom: 1px solid #9f9fa3;
+      border-left: 1px solid #9f9fa3;
+      border-right: 1px solid #9f9fa3; }
+      .accordion-tabs-minimal .tab-content section h4 {
+        font-size: 36px; }
+      .accordion-tabs-minimal .tab-content section div {
+        width: 100%;
+        float: left; } }
 /*Main navigation*/
 .header {
   width: 100%;

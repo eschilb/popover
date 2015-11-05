@@ -170,17 +170,17 @@
 /*Tabs styling*/
 
 .accordion-tabs-minimal {
-  $base-border-color: gainsboro !default;
+  $base-border-color: lighten($dark-green, 40%) !default;
   $base-background-color: white !default;
   $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $medium-screen: em(640) !default;
+  $action-color: $green !default;
+  $dark-gray: $dark-green !default;
+  $medium-screen: em(480) !default;
   $tab-link-color: $dark-gray;
   $tab-border: 1px solid $base-border-color;
   $tab-active-background: $base-background-color;
   $tab-inactive-color: $base-background-color;
-  $tab-inactive-hover-color: silver;
+  $tab-inactive-hover-color: $light-green;
   $tab-mode: $medium-screen;
 
 	@include clearfix;
@@ -202,6 +202,8 @@
     border-top: $tab-border;
     color: $tab-link-color;
     display: block;
+    font-family: $dosis;
+    font-weight: 600;
     padding: ($base-spacing / 2) $gutter;
     text-decoration: none;
 
@@ -302,7 +304,12 @@
 	}
 
 	.accordion-tabs-minimal {
+		margin: 16px auto;
+		padding: 15px;
 		.tab-content {
+			border-bottom: 1px solid lighten($dark-green, 40%);
+			border-left: 1px solid lighten($dark-green, 40%);
+			border-right: 1px solid lighten($dark-green, 40%);
 			section {
 
 				h4 {
