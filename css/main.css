@@ -290,6 +290,11 @@ form {
 :-ms-input-placeholder {
   color: #535356; }
 
+.choose-file {
+  background-color: #bedc32;
+  border: #3a3a3c;
+  font-family: "Dosis", sans-serif; }
+
 /*Event Listing*/
 .back-to-events {
   border-bottom: 1px solid transparent;

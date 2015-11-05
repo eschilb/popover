@@ -215,6 +215,12 @@ form {
    color: lighten($dark-green, 10%);  
 }
 
+.choose-file {
+	background-color: $light-green;
+	border: $dark-green;
+	font-family: $dosis;
+}
+
 /*Event Listing*/
 
 .back-to-events {
