@@ -59,7 +59,7 @@ html {
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       font-size: 24px;
-      margin: 60px 15px 30px 15px;
+      margin: 60px 0 30px 0;
       width: 100%;
       text-align: center; }
     .accordion-tabs-minimal .tab-content div {
@@ -220,9 +220,6 @@ html {
     .header .menuIcon {
       display: none; } }
 /*Global styling*/
-body {
-  background-color: #f5f6f4; }
-
 /*Form header*/
 .create-event-header {
   background-color: #1fb870;
@@ -237,6 +234,7 @@ body {
 /*Form*/
 form {
   margin: 30px;
+  padding: 15px;
   max-width: 700px; }
   form .ndt-container {
     width: 100%; }
@@ -256,25 +254,23 @@ form {
   form input[type=date],
   form input[type=time],
   form textarea {
+    background-color: white;
     border: 1px solid #bedc32;
     font-family: "Montserrat", sans-serif;
     font-size: .812rem;
     color: #535356; }
   form input[type=text],
   form textarea {
-    padding: 7px 10px; }
+    padding: 10px; }
   form input[type=date],
   form input[type=time] {
-    padding: 5.5px 10px; }
+    padding: 9px 10px; }
   form textarea {
     width: 100%;
-    height: 200px; }
+    height: 200px;
+    line-height: 1.5; }
   form .create-button {
     margin-top: 30px; }
-
-.form {
-  background-color: #3a3a3c;
-  padding: 15px; }
 
 ::-webkit-input-placeholder {
   color: #535356; }
@@ -292,8 +288,11 @@ form {
 
 .choose-file {
   background-color: #bedc32;
-  border: #3a3a3c;
-  font-family: "Dosis", sans-serif; }
+  border: solid 3px #3a3a3c;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: 10px; }
 
 /*Event Listing*/
 .back-to-events {
@@ -317,10 +316,10 @@ form {
   text-align: center; }
 
 .listing-box {
-  border: 1px solid #737373;
+  border: 1px solid #d9d9d9;
+  box-shadow: 1px 1px 1px #d9d9d9;
   margin: 30px; }
   .listing-box .label {
-    border-bottom: 1px solid #737373;
     background-color: #3a3a3c;
     color: #1fb870;
     font-family: "Montserrat", sans-serif;
@@ -328,6 +327,7 @@ form {
     font-weight: 700;
     padding: 12px 15px; }
   .listing-box .event-description {
+    background-color: #fff;
     color: #3a3a3c;
     font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
@@ -373,6 +373,14 @@ footer {
       color: #f5f6f4;
       text-decoration: none; }
 
+/*Home*/
+.tinted-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pattern.png");
+  background-color: #1fb870;
+  background-blend-mode: luminosity; }
+
 /*Media queries*/
 @media screen and (min-width: 480px) {
   .page-header {
@@ -387,9 +395,13 @@ footer {
     form .gdf-container label, form .gdf-container input {
       width: 100%; } }
 @media screen and (min-width: 760px) {
-  .create-event-header, .listing-box, form {
+  .listing-box, form {
     max-width: 700px;
     margin: 30px auto 0 auto; }
+
+  .create-event-header p {
+    max-width: 700px;
+    margin: 0 auto; }
 
   .back-to-events:hover {
     border-bottom: 1px solid #bedc32; }

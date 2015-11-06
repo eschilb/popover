@@ -45,22 +45,22 @@
 	}
 
 	.nav li {
-		border: solid 3px transparent;
-		font-family: $dosis;
-		font-size: 1.125rem;
-		font-weight: 600;
-		list-style: none;
-		color: $grey;
-		letter-spacing: .1em;
-		padding: 1em;
-		margin: .3em;
-		display: block;
-		transition: all 0.3s;
-
+				border: solid 3px transparent;
+				font-family: $dosis;
+				font-size: 1.125rem;
+				font-weight: 600;
+				list-style: none;
+				color: $grey;
+				letter-spacing: .1em;
+				padding: 1em;
+				margin: .3em;
+				display: block;
+				transition: all 0.3s;
 	}
 
 	.nav a {
 		text-decoration: none;
+
 	}
 
 	.list {
@@ -112,9 +112,9 @@
 
 /*Global styling*/
 
-body {
-	background-color: $grey;
-}
+// body {
+// 	background-color: $grey;
+// }
 
 
 
@@ -137,6 +137,7 @@ body {
 form {
 	
 	margin: 30px;
+	padding: 15px;
 	max-width: 700px;
 
 	.ndt-container {
@@ -168,6 +169,7 @@ form {
 	input[type=date],
 	input[type=time],
 	textarea {
+		background-color: white;
 		border: 1px solid $light-green;
 		font-family: $montserrat;
 		font-size: .812rem;
@@ -176,27 +178,23 @@ form {
 
 	input[type=text],
 	textarea {
-		padding: 7px 10px;
+		padding: 10px;
 	}
 
 	input[type=date],
 	input[type=time] {
-		padding: 5.5px 10px;
+		padding: 9px 10px;
 	}
 
 	textarea {
 		width: 100%;
 		height: 200px;
+		line-height: 1.5;
 	}
 
 	.create-button {
 		margin-top: 30px;
 	}
-}
-
-.form {
-	background-color: $dark-green;
-	padding: 15px;
 }
 
 ::-webkit-input-placeholder {
@@ -217,8 +215,12 @@ form {
 
 .choose-file {
 	background-color: $light-green;
-	border: $dark-green;
+	border: solid 3px $dark-green;
 	font-family: $dosis;
+	font-weight: 600;
+	letter-spacing: .1em;
+	padding: 10px;
+
 }
 
 /*Event Listing*/
@@ -246,11 +248,12 @@ form {
 }
 
 .listing-box {
-	border: 1px solid lighten($key-color, 30%);
+	border: 1px solid lighten($key-color, 70%);
+	box-shadow: 1px 1px 1px lighten($key-color, 70%);
 	margin: 30px;
 	
 	.label {
-		border-bottom: 1px solid lighten($key-color, 30%);
+		// border-bottom: 1px solid lighten($key-color, 30%);
 		background-color: $dark-green;
 		color: $green;
 		font-family: $montserrat;
@@ -260,6 +263,7 @@ form {
 	}
 
 	.event-description {
+		background-color: #fff;
 		color: $dark-green;
 		font-family: $montserrat;
 		font-size: 1.125rem;
@@ -319,6 +323,15 @@ footer {
 	}
 }
 
+/*Home*/
+
+.tinted-image {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/pattern.png');
+	background-color: $green;
+  	background-blend-mode: luminosity;
+}
 
 /*Media queries*/
 
@@ -352,9 +365,15 @@ footer {
 
 
 @media screen and (min-width: 760px) {
-	.create-event-header, .listing-box, form {
+	
+	.listing-box, form {
 		max-width: 700px;
 		margin: 30px auto 0 auto;
+	}
+
+	.create-event-header p {
+		max-width: 700px;
+		margin: 0 auto;
 	}
 
 	.back-to-events {
