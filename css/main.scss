@@ -1,5 +1,10 @@
-@import 'variables', 'bourbon/bourbon', 'neat/neat', 'events';
+@import 'variables', 'bourbon/bourbon', 'neat/neat', 'events', 'listing';
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,700);
+
+svg {
+	height: 45px;
+	width: 45px;
+}
 
 
 /*Main navigation*/
@@ -7,7 +12,7 @@
 
 .header {
 	width: 100%;
-	background-color: $green;
+	background-color: $dark-green;
 	
 	a .logo-place {
 		background-color: $grey;
@@ -22,7 +27,7 @@
 	}
 
 	.menuIcon {
-		background: $green;
+		background: $dark-green;
 		display: block;
 		font-family: $dosis;
 		color: $grey;
@@ -33,7 +38,7 @@
 	}
 
 	.nav {
-		background: $green;
+		background: $dark-green;
 		margin: 0;
 		padding: 0;
 		text-align: center;
@@ -56,6 +61,7 @@
 				margin: .3em;
 				display: block;
 				transition: all 0.3s;
+				vertical-align: center;
 	}
 
 	.nav a {
@@ -75,7 +81,7 @@
 
 		.nav {
 			font-size: 0;
-			background: $green;
+			background: $dark-green;
 			padding: 0;
 			width: 100%;
 			text-align: center;
@@ -122,21 +128,50 @@
 
 .create-event-header {
 	background-color: $green;
-	color: $key-color;
+	color: $grey;
 	font-family: $montserrat;
 	font-size: 18px;
 	line-height: 1.5;
-	margin-top: 30px;
+	// margin-top: 30px;
+	opacity: .9;
 	padding: 30px;
+	position: relative;
+	top: 60px;
 	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	.create-header {
+		opacity: 1;
+		clear: both;
+		color: $dark-green;
+		font-family: $montserrat;
+		font-weight: 700;
+		font-size: 1.5rem;
+		// padding: 30px;
+	  	text-align: center;
+	  	text-shadow: 1px 1px $light-blue;
+	}
 }
 
 /*Form*/
 
+.create-image {
+	opacity: 1;
+	width: 100%;
+	height: 378px;
+	background-image: url('../images/kitchen-pattern.png');
+	background-color: $green;
+  	background-blend-mode: luminosity;
+}
+
+.create-container {
+	background-color: $grey;
+}
 
 form {
-	
-	margin: 30px;
+
+	margin: 0;
 	padding: 15px;
 	max-width: 700px;
 
@@ -170,7 +205,7 @@ form {
 	input[type=time],
 	textarea {
 		background-color: white;
-		border: 1px solid $light-green;
+		border: 1px solid $light-blue;
 		font-family: $montserrat;
 		font-size: .812rem;
 		color: lighten($dark-green, 10%);
@@ -178,12 +213,12 @@ form {
 
 	input[type=text],
 	textarea {
-		padding: 10px;
+		padding: 15px;
 	}
 
 	input[type=date],
 	input[type=time] {
-		padding: 9px 10px;
+		padding: 13px 15px;
 	}
 
 	textarea {
@@ -223,86 +258,17 @@ form {
 
 }
 
-/*Event Listing*/
 
-.back-to-events {
-	border-bottom: 1px solid transparent;
-	color: $light-green;
-	float: left;
-	font-family: $dosis;
-	font-size: 1.125rem;
-	letter-spacing: .05em;
-	margin: 30px;
-	padding-bottom: 5px;
-	text-decoration: none;
-}
 
-.page-header {
-	clear: both;
-	color: $green;
-	font-family: $montserrat;
-	font-weight: 700;
-	font-size: 1.5rem;
-	margin: 30px;
-  	text-align: center;
-}
-
-.listing-box {
-	border: 1px solid lighten($key-color, 70%);
-	box-shadow: 1px 1px 1px lighten($key-color, 70%);
-	margin: 30px;
-	
-	.label {
-		// border-bottom: 1px solid lighten($key-color, 30%);
-		background-color: $dark-green;
-		color: $green;
-		font-family: $montserrat;
-		font-size: 1.125rem;
-		font-weight: 700;
-		padding: 12px 15px;
-	}
-
-	.event-description {
-		background-color: #fff;
-		color: $dark-green;
-		font-family: $montserrat;
-		font-size: 1.125rem;
-		font-weight: 400;
-		line-height: 1.5;
-		padding: 12px 15px;
-	}
-}
-
-.profile-image {
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	vertical-align: middle;
-}
-
-.button {
-	button {
-		background-color: $light-green;
-		border: solid 3px $dark-green;
-		font-family: $dosis;
-		font-weight: 600;
-		color: $dark-green;
-		list-style: none;
-		display: inline-block;
-		font-size: 1.125rem;
-		letter-spacing: .1em;
-		padding: 12px 15px;
-	}
-}
+/*Footer*/
 
 footer {
-	background-color: $green;
+	background-color: $dark-green;
 	color: $grey;
 	font-family: $dosis;
 	font-size: 1.125rem;
 	height: 60px;
 	letter-spacing: .05em;
-	margin-top: 60px;
 
 	.copyright {
 		float: left;
@@ -325,19 +291,35 @@ footer {
 
 /*Home*/
 
-.tinted-image {
-	width: 100%;
-	height: 100%;
-	background-image: url('../images/pattern.png');
-	background-color: $green;
-  	background-blend-mode: luminosity;
+// .tinted-image {
+// 	$gradient: linear-gradient(45deg, $light-blue, $light-green);
+// 	width: 100%;
+// 	height: 400px;
+// 	background-image: url('../images/triangle-pattern.gif');
+// 	background-color: $dark-green;
+//   	background-blend-mode: luminosity;
+// }
+
+.type-wrap {
+	$gradient: linear-gradient(45deg, $light-blue, $light-green);
+  	box-sizing: border-box;
+  	box-shadow: none;
+  	border: none;
+  	font-family: $dosis;
+  	font-size: 1rem;
+  	font-weight: 600;
+  	padding: 100px 30px;
+  	letter-spacing: .1em;
+  	color: $grey;
+  	background: $gradient;
 }
+
 
 /*Media queries*/
 
 
 @media screen and (min-width: 480px) {
-	.page-header {
+	.page-header, .create-event-header .create-header {
 		font-size: 2.25rem;
 	}
 
@@ -360,15 +342,23 @@ footer {
 		}
 	}
 
+	.type-wrap {
+		font-size: 2rem;
+	}
 }
 
 
 
 @media screen and (min-width: 760px) {
 	
-	.listing-box, form {
+	form {
 		max-width: 700px;
-		margin: 30px auto 0 auto;
+		margin: 0 auto;
+	}
+
+	.listing-box, .rsvp {
+		max-width: 700px;
+		margin: 30px auto;
 	}
 
 	.create-event-header p {
@@ -378,8 +368,11 @@ footer {
 
 	.back-to-events {
 
+		margin: 30px 0;
+
 		&:hover {
-			border-bottom: 1px solid $light-green;
+			background-color: lighten($dark-green, 10%);
+			color: lighten($light-green, 10%);
 		}
 	}
 
@@ -409,9 +402,17 @@ footer {
 		}
 	}
 
+	.type-wrap {
+	  	font-size: 2rem;
+	  	padding: 150px;
+	}
 }
 
-
+@media screen and (min-width: 960px) {
+	.type-wrap {
+		font-size: 3rem;
+	}
+}
 
 
 

@@ -25,7 +25,7 @@ html {
   .accordion-tabs-minimal a.tab-link {
     background-color: white;
     border-top: 1px solid #9f9fa3;
-    color: #3a3a3c;
+    color: #3A3A3C;
     display: block;
     font-family: "Dosis", sans-serif;
     font-weight: 600;
@@ -36,7 +36,7 @@ html {
         display: inline-block;
         border-top: 0; } }
     .accordion-tabs-minimal a.tab-link:hover {
-      color: #1fb870; }
+      color: #52E8B6; }
     .accordion-tabs-minimal a.tab-link:focus {
       outline: none; }
     .accordion-tabs-minimal a.tab-link.is-active {
@@ -58,15 +58,16 @@ html {
       color: #1fb870;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 24px;
-      margin: 60px 0 30px 0;
+      font-size: 30px;
+      margin: 30px 0;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      text-shadow: 1px 1px #3A3A3C; }
     .accordion-tabs-minimal .tab-content div {
-      border-bottom: solid 3px #3a3a3c;
-      border-left: solid 10px #3a3a3c;
-      border-right: solid 3px #3a3a3c;
-      border-top: solid 3px #3a3a3c;
+      border-bottom: solid 3px #3A3A3C;
+      border-left: solid 10px #3A3A3C;
+      border-right: solid 3px #3A3A3C;
+      border-top: solid 3px #3A3A3C;
       float: left;
       margin: 15px 0;
       width: 100%; }
@@ -121,11 +122,11 @@ html {
     display: inline-block;
     text-decoration: none;
     margin-right: 20px;
-    transition: 0.3s; }
+    transition: 0.15s; }
     .btn:after {
       content: "";
       position: absolute;
-      transition: 0.3s;
+      transition: 0.15s;
       z-index: -1;
       background: transparent; }
     .btn:before {
@@ -134,19 +135,99 @@ html {
 
   /**** from left to right style ****/
   .btn-l-r:hover p {
-    color: #1fb870; }
+    color: #52E8B6; }
   .btn-l-r:hover:after {
-    background-color: #3a3a3c;
+    background-color: #3A3A3C;
     width: 100%; }
   .btn-l-r:after {
     top: 0;
     left: 0;
     width: 0%;
     height: 100%; } }
+/*Event Listing*/
+.main-container {
+  background-color: #f5f6f4;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.event-image {
+  background: url("../images/ingredients-lg.png") 0 0 no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 400px;
+  width: 100%; }
+
+.back-to-events {
+  background-color: #3A3A3C;
+  border-bottom: 1px solid transparent;
+  color: #bedc32;
+  float: left;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: .05em;
+  margin: 15px 0;
+  padding: 15px;
+  text-decoration: none; }
+
+.page-header {
+  opacity: 1;
+  clear: both;
+  color: #1fb870;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 30px;
+  text-align: center;
+  text-shadow: 1px 1px #3A3A3C; }
+
+.listing-box {
+  box-shadow: 1px 1px 1px #d9d9d9;
+  margin: 30px; }
+  .listing-box .label {
+    background-color: #3A3A3C;
+    color: #52E8B6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 12px 15px; }
+  .listing-box .event-description {
+    background-color: #fff;
+    color: #3A3A3C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 12px 15px; }
+
+.profile-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle; }
+
+.rsvp {
+  margin: 30px; }
+
+.button button {
+  background-color: #bedc32;
+  border: solid 3px #3A3A3C;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #3A3A3C;
+  list-style: none;
+  display: inline-block;
+  font-size: 1.125rem;
+  letter-spacing: .1em;
+  padding: 12px 15px; }
+
+svg {
+  height: 45px;
+  width: 45px; }
+
 /*Main navigation*/
 .header {
   width: 100%;
-  background-color: #1fb870; }
+  background-color: #3A3A3C; }
   .header a .logo-place {
     background-color: #f5f6f4;
     font-family: "Dosis", sans-serif;
@@ -158,7 +239,7 @@ html {
     display: inline-block;
     float: left; }
   .header .menuIcon {
-    background: #1fb870;
+    background: #3A3A3C;
     display: block;
     font-family: "Dosis", sans-serif;
     color: #f5f6f4;
@@ -167,7 +248,7 @@ html {
     font-size: 1.5em;
     text-align: right; }
   .header .nav {
-    background: #1fb870;
+    background: #3A3A3C;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -185,7 +266,8 @@ html {
     padding: 1em;
     margin: .3em;
     display: block;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    vertical-align: center; }
   .header .nav a {
     text-decoration: none; }
   .header .list {
@@ -196,7 +278,7 @@ html {
     width: 100%; }
     .header .nav {
       font-size: 0;
-      background: #1fb870;
+      background: #3A3A3C;
       padding: 0;
       width: 100%;
       text-align: center;
@@ -223,17 +305,41 @@ html {
 /*Form header*/
 .create-event-header {
   background-color: #1fb870;
-  color: #262626;
+  color: #f5f6f4;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  margin-top: 30px;
+  opacity: .9;
   padding: 30px;
-  width: 100%; }
+  position: relative;
+  top: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .create-event-header .create-header {
+    opacity: 1;
+    clear: both;
+    color: #3A3A3C;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px #52E8B6; }
 
 /*Form*/
+.create-image {
+  opacity: 1;
+  width: 100%;
+  height: 378px;
+  background-image: url("../images/kitchen-pattern.png");
+  background-color: #1fb870;
+  background-blend-mode: luminosity; }
+
+.create-container {
+  background-color: #f5f6f4; }
+
 form {
-  margin: 30px;
+  margin: 0;
   padding: 15px;
   max-width: 700px; }
   form .ndt-container {
@@ -255,16 +361,16 @@ form {
   form input[type=time],
   form textarea {
     background-color: white;
-    border: 1px solid #bedc32;
+    border: 1px solid #52E8B6;
     font-family: "Montserrat", sans-serif;
     font-size: .812rem;
     color: #535356; }
   form input[type=text],
   form textarea {
-    padding: 10px; }
+    padding: 15px; }
   form input[type=date],
   form input[type=time] {
-    padding: 9px 10px; }
+    padding: 13px 15px; }
   form textarea {
     width: 100%;
     height: 200px;
@@ -288,79 +394,20 @@ form {
 
 .choose-file {
   background-color: #bedc32;
-  border: solid 3px #3a3a3c;
+  border: solid 3px #3A3A3C;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
   letter-spacing: .1em;
   padding: 10px; }
 
-/*Event Listing*/
-.back-to-events {
-  border-bottom: 1px solid transparent;
-  color: #bedc32;
-  float: left;
-  font-family: "Dosis", sans-serif;
-  font-size: 1.125rem;
-  letter-spacing: .05em;
-  margin: 30px;
-  padding-bottom: 5px;
-  text-decoration: none; }
-
-.page-header {
-  clear: both;
-  color: #1fb870;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 30px;
-  text-align: center; }
-
-.listing-box {
-  border: 1px solid #d9d9d9;
-  box-shadow: 1px 1px 1px #d9d9d9;
-  margin: 30px; }
-  .listing-box .label {
-    background-color: #3a3a3c;
-    color: #1fb870;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-    padding: 12px 15px; }
-  .listing-box .event-description {
-    background-color: #fff;
-    color: #3a3a3c;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 12px 15px; }
-
-.profile-image {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  vertical-align: middle; }
-
-.button button {
-  background-color: #bedc32;
-  border: solid 3px #3a3a3c;
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  color: #3a3a3c;
-  list-style: none;
-  display: inline-block;
-  font-size: 1.125rem;
-  letter-spacing: .1em;
-  padding: 12px 15px; }
-
+/*Footer*/
 footer {
-  background-color: #1fb870;
+  background-color: #3A3A3C;
   color: #f5f6f4;
   font-family: "Dosis", sans-serif;
   font-size: 1.125rem;
   height: 60px;
-  letter-spacing: .05em;
-  margin-top: 60px; }
+  letter-spacing: .05em; }
   footer .copyright {
     float: left;
     padding: 20px 30px 20px 30px; }
@@ -374,16 +421,21 @@ footer {
       text-decoration: none; }
 
 /*Home*/
-.tinted-image {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/pattern.png");
-  background-color: #1fb870;
-  background-blend-mode: luminosity; }
+.type-wrap {
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 100px 30px;
+  letter-spacing: .1em;
+  color: #f5f6f4;
+  background: linear-gradient(45deg, #52E8B6, #bedc32); }
 
 /*Media queries*/
 @media screen and (min-width: 480px) {
-  .page-header {
+  .page-header, .create-event-header .create-header {
     font-size: 2.25rem; }
 
   form .ndt-container {
@@ -393,18 +445,28 @@ footer {
   form .gdf-container {
     max-width: 400px; }
     form .gdf-container label, form .gdf-container input {
-      width: 100%; } }
+      width: 100%; }
+
+  .type-wrap {
+    font-size: 2rem; } }
 @media screen and (min-width: 760px) {
-  .listing-box, form {
+  form {
     max-width: 700px;
-    margin: 30px auto 0 auto; }
+    margin: 0 auto; }
+
+  .listing-box, .rsvp {
+    max-width: 700px;
+    margin: 30px auto; }
 
   .create-event-header p {
     max-width: 700px;
     margin: 0 auto; }
 
-  .back-to-events:hover {
-    border-bottom: 1px solid #bedc32; }
+  .back-to-events {
+    margin: 30px 0; }
+    .back-to-events:hover {
+      background-color: #535356;
+      color: #cce35e; }
 
   form .ndt-container {
     float: left;
@@ -418,6 +480,13 @@ footer {
     form .gdf-container label, form .gdf-container input {
       width: 100%; }
   form .clear {
-    clear: both; } }
+    clear: both; }
+
+  .type-wrap {
+    font-size: 2rem;
+    padding: 150px; } }
+@media screen and (min-width: 960px) {
+  .type-wrap {
+    font-size: 3rem; } }
 
 /*# sourceMappingURL=main.css.map */

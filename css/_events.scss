@@ -8,7 +8,7 @@
   $base-border-color: lighten($dark-green, 40%) !default;
   $base-background-color: white !default;
   $base-spacing: 1.5em !default;
-  $action-color: $green !default;
+  $action-color: $light-blue !default;
   $dark-gray: $dark-green !default;
   $medium-screen: em(480) !default;
   $tab-link-color: $dark-gray;
@@ -81,10 +81,11 @@
 			color: $green;
 			font-family: $montserrat;
 			font-weight: 700;
-			font-size: 24px;
-			margin: 60px 0 30px 0;
+			font-size: 30px;
+			margin: 30px 0;
 			width: 100%;
 		  	text-align: center;
+		  	text-shadow: 1px 1px $dark-green;
 		}
 
 		div {
@@ -184,11 +185,11 @@
 		display: inline-block;
 		text-decoration: none;
 		margin-right: 20px;
-		transition: 0.3s;
+		transition: 0.15s;
 		&:after {
 			content: "";
 			position: absolute;
-			transition: 0.3s;
+			transition: 0.15s;
 			z-index: -1;
 			background: transparent;
 		}
@@ -203,7 +204,7 @@
 	.btn-l-r { 
 		&:hover {
 			p { 
-				color: $green;
+				color: $light-blue;
 			}
 		}
 
@@ -217,23 +218,6 @@
 			left: 0;
 			width: 0%;
 			height: 100%;
-		}
-	}
-
-	.accordion-tabs-minimal {
-		.tab-content {
-
-			// p {
-			// 	display: inline-block;
-			// }
-
-			// div {
-			// 	img {
-			// 		display: inline-block;
-			// 		float: left;
-			// 		max-width: 25%;
-			// 	}
-			// }
 		}
 
 	}

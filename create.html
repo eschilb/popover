@@ -23,10 +23,13 @@
 		      </ul>
 	      </nav>
 	    </div>
-    	<div class="page-header">Create An Event</div>
-    <div class="create-event-header">
-    	<p>You’re creating a Popover dinner event that you'll host for other members! After you create the event, you can view the guestlist and get planning.</p>
-    </div>
+    	<div class="create-image">
+    		    <div class="create-event-header">
+			    	<div class="create-header">Create An Event</div>
+			    	<p>You’re creating a Popover dinner event that you'll host for other members! After you create the event, you can view the guestlist and get planning.</p>
+			    </div>
+    	</div>
+
     <div class="create-container">    
 	    <form class="form">
 		    <div class="ndt-container">
@@ -75,21 +78,29 @@ Dessert: Panna Cotta</textarea>
 		    </div>
 		</form>
 	</div>
-</div>
-<script >
-$(document).ready(function() {
-    $("#time").val("18:00");
-});
+</div>	
+		<footer>
+		    <div class="copyright">
+		      <p>2015 Popover</p>
+		    </div>
+		    <div class="social">
+		      <a href="#" class="support">Contact Us</a>
+		    </div>
+		</footer>
+		<script >
+		$(document).ready(function() {
+		    $("#time").val("18:00");
+		});
 
-$(document).ready(function() {
-    $("#date").val("2015-11-18");
-});
-</script>
-<script>
-$(".menuIcon").click(function(event) {
-  event.preventDefault();
-  $(".nav").toggleClass("list");
-});
-</script>
+		$(document).ready(function() {
+		    $("#date").val("2015-11-18");
+		});
+		</script>
+		<script>
+		$(".menuIcon").click(function(event) {
+		  event.preventDefault();
+		  $(".nav").toggleClass("list");
+		});
+		</script>
 	</body>
 </html>
