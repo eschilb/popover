@@ -422,7 +422,7 @@ footer {
   box-shadow: none;
   border: none;
   font-family: "Dosis", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   padding: 100px 30px;
   letter-spacing: .1em;
@@ -433,7 +433,7 @@ footer {
   height: 200px;
   width: 200px;
   margin: 30px auto;
-  padding: 50px;
+  padding: 30px;
   border-radius: 50%;
   background-color: #1fb870; }
 
@@ -446,6 +446,14 @@ footer {
   margin: 0 30px;
   max-width: 700px;
   padding-bottom: 30px; }
+  .home-description:last-of-type {
+    border-bottom: none; }
+  .home-description h3 {
+    color: #1fb870;
+    font-size: 1.25rem;
+    margin: .5rem 0; }
+  .home-description p {
+    margin: 0; }
 
 /*Media queries*/
 @media screen and (min-width: 480px) {
@@ -464,13 +472,14 @@ footer {
   .type-wrap {
     font-size: 2rem; } }
 @media screen and (min-width: 760px) {
-  form {
-    max-width: 700px;
-    margin: 0 auto; }
-
-  .listing-box, .rsvp {
-    max-width: 700px;
-    margin: 30px auto; }
+  .outer-container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .outer-container::after {
+      clear: both;
+      content: "";
+      display: table; }
 
   .create-event-header p {
     max-width: 700px;
@@ -482,19 +491,22 @@ footer {
       background-color: #535356;
       color: #cce35e; }
 
-  form .ndt-container {
-    float: left;
-    padding-right: 15px;
-    width: 335px; }
-    form .ndt-container label, form .ndt-container input {
-      width: 100%; }
-  form .gdf-container {
-    float: left;
-    width: 335px; }
-    form .gdf-container label, form .gdf-container input {
-      width: 100%; }
-  form .clear {
-    clear: both; }
+  form {
+    max-width: 700px;
+    margin: 0 auto; }
+    form .ndt-container {
+      float: left;
+      padding-right: 15px;
+      width: 335px; }
+      form .ndt-container label, form .ndt-container input {
+        width: 100%; }
+    form .gdf-container {
+      float: left;
+      width: 335px; }
+      form .gdf-container label, form .gdf-container input {
+        width: 100%; }
+    form .clear {
+      clear: both; }
 
   .type-wrap {
     font-size: 2rem;
