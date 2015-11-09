@@ -260,10 +260,13 @@ html {
     color: #f5f6f4;
     letter-spacing: .1em;
     padding: 1em;
-    margin: .3em;
+    margin: 0;
     display: block;
     transition: all 0.3s;
     vertical-align: center; }
+    .header .nav li:active {
+      border: solid 3px #f5f6f4;
+      color: #52E8B6; }
   .header .nav a {
     text-decoration: none; }
   .header .list {
@@ -290,7 +293,7 @@ html {
       display: inline-block;
       font-size: 1.125rem;
       letter-spacing: .1em;
-      margin: .5rem;
+      margin: .5rem 2%;
       padding: 12px 15px;
       transition: all 0.3s ease-in-out; }
       .header .nav li:hover {
@@ -510,6 +513,10 @@ footer {
         width: 100%; }
     form .clear {
       clear: both; }
+
+  .listing-box, .rsvp {
+    margin: 30px auto;
+    max-width: 700px; }
 
   .type-wrap {
     font-size: 2rem;

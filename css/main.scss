@@ -50,18 +50,23 @@
 	}
 
 	.nav li {
-				border: solid 3px transparent;
-				font-family: $dosis;
-				font-size: 1.125rem;
-				font-weight: 600;
-				list-style: none;
-				color: $grey;
-				letter-spacing: .1em;
-				padding: 1em;
-				margin: .3em;
-				display: block;
-				transition: all 0.3s;
-				vertical-align: center;
+		border: solid 3px transparent;
+		font-family: $dosis;
+		font-size: 1.125rem;
+		font-weight: 600;
+		list-style: none;
+		color: $grey;
+		letter-spacing: .1em;
+		padding: 1em;
+		margin: 0;
+		display: block;
+		transition: all 0.3s;
+		vertical-align: center;
+
+		&:active {
+			border: solid 3px $grey;
+			color: $light-blue;
+		}
 	}
 
 	.nav a {
@@ -101,7 +106,7 @@
 			display: inline-block;
 			font-size: 1.125rem;
 			letter-spacing: .1em;
-			margin: .5rem;
+			margin: .5rem 2%;
 			padding: 12px 15px;
 			transition: all 0.3s ease-in-out;
 
@@ -117,10 +122,6 @@
 }
 
 /*Global styling*/
-
-// body {
-// 	background-color: $grey;
-// }
 
 
 
@@ -433,6 +434,11 @@ footer {
 		.clear {
 			clear: both;
 		}
+	}
+
+	.listing-box, .rsvp {
+		margin: 30px auto;
+		max-width: 700px;
 	}
 
 	.type-wrap {
