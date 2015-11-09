@@ -89,10 +89,10 @@
 		}
 
 		div {
-			border-bottom: solid 3px $dark-green;
-			border-left: solid 10px $dark-green;
-			border-right: solid 3px $dark-green;
-			border-top: solid 3px $dark-green;
+			border-bottom: solid 3px lighten($light-blue, 20%);
+			border-left: solid 10px lighten($light-blue, 20%);
+			border-right: solid 3px lighten($light-blue, 20%);
+			border-top: solid 3px lighten($light-blue, 20%);
 			float: left;
 			margin: 15px 0;
 			width: 100%;

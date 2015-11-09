@@ -64,10 +64,10 @@ html {
       text-align: center;
       text-shadow: 1px 1px #3A3A3C; }
     .accordion-tabs-minimal .tab-content div {
-      border-bottom: solid 3px #3A3A3C;
-      border-left: solid 10px #3A3A3C;
-      border-right: solid 3px #3A3A3C;
-      border-top: solid 3px #3A3A3C;
+      border-bottom: solid 3px #acf4dc;
+      border-left: solid 10px #acf4dc;
+      border-right: solid 3px #acf4dc;
+      border-top: solid 3px #acf4dc;
       float: left;
       margin: 15px 0;
       width: 100%; }
@@ -151,7 +151,7 @@ html {
   overflow: hidden; }
 
 .event-image {
-  background: url("../images/ingredients-lg.png") 0 0 no-repeat;
+  background: url("../images/listing-image.png") 0 0 no-repeat;
   background-size: cover;
   background-position: 50%;
   height: 400px;
@@ -220,13 +220,12 @@ html {
   letter-spacing: .1em;
   padding: 12px 15px; }
 
-/*Main navigation*/
+/*Header and Main navigation*/
 .header {
   width: 100%;
   background-color: #3A3A3C; }
   .header a .logo-place {
     font-family: "Dosis", sans-serif;
-    height: 70px;
     width: 140px;
     margin-left: 15px;
     margin-top: 15px;
@@ -271,7 +270,7 @@ html {
   .header .list {
     display: block; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 660px) {
   .header {
     width: 100%; }
     .header .nav {
@@ -302,16 +301,14 @@ html {
 /*Global styling*/
 /*Form header*/
 .create-event-header {
-  background-color: #1fb870;
+  background-color: rgba(31, 184, 112, 0.9);
   color: #f5f6f4;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  opacity: .9;
   padding: 30px;
-  position: relative;
-  top: 60px;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   overflow: hidden; }
   .create-event-header .create-header {
@@ -328,7 +325,7 @@ html {
 .create-image {
   opacity: 1;
   width: 100%;
-  height: 378px;
+  height: 258px;
   background-image: url("../images/kitchen-pattern.png");
   background-color: #1fb870;
   background-blend-mode: luminosity; }
