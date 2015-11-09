@@ -264,6 +264,7 @@ form {
 
 footer {
 	background-color: $dark-green;
+	clear: both;
 	color: $grey;
 	font-family: $dosis;
 	font-size: 1.125rem;
@@ -374,12 +375,19 @@ footer {
 @media screen and (min-width: 760px) {
 
 	.outer-container {
-		@include outer-container;
-		
+
+		margin: 0 auto;
+		max-width: 900px;
+
 		.home-icon {
+			float: left;
+			clear: both;
+			margin: 0 30px;
 		}
 
 		.home-description {
+			border-bottom: none;
+			margin: 100px auto;
 		}
 	}
 

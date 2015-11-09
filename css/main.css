@@ -399,6 +399,7 @@ form {
 /*Footer*/
 footer {
   background-color: #3A3A3C;
+  clear: both;
   color: #f5f6f4;
   font-family: "Dosis", sans-serif;
   font-size: 1.125rem;
@@ -473,13 +474,15 @@ footer {
     font-size: 2rem; } }
 @media screen and (min-width: 760px) {
   .outer-container {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    .outer-container::after {
+    margin: 0 auto;
+    max-width: 900px; }
+    .outer-container .home-icon {
+      float: left;
       clear: both;
-      content: "";
-      display: table; }
+      margin: 0 30px; }
+    .outer-container .home-description {
+      border-bottom: none;
+      margin: 100px auto; }
 
   .create-event-header p {
     max-width: 700px;
