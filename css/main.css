@@ -135,9 +135,9 @@ html {
 
   /**** from left to right style ****/
   .btn-l-r:hover p {
-    color: #52E8B6; }
+    color: #1fb870; }
   .btn-l-r:hover:after {
-    background-color: #3A3A3C;
+    background-color: #d9faef;
     width: 100%; }
   .btn-l-r:after {
     top: 0;
@@ -225,11 +225,10 @@ html {
   width: 100%;
   background-color: #3A3A3C; }
   .header a .logo-place {
-    background-color: #f5f6f4;
     font-family: "Dosis", sans-serif;
-    height: 40px;
-    width: 40px;
-    margin-left: 30px;
+    height: 70px;
+    width: 140px;
+    margin-left: 15px;
     margin-top: 15px;
     text-decoration: none;
     display: inline-block;
@@ -293,7 +292,7 @@ html {
       display: inline-block;
       font-size: 1.125rem;
       letter-spacing: .1em;
-      margin: .5rem 2%;
+      margin: .5rem 1%;
       padding: 12px 15px;
       transition: all 0.3s ease-in-out; }
       .header .nav li:hover {
@@ -407,7 +406,8 @@ footer {
   font-family: "Dosis", sans-serif;
   font-size: 1.125rem;
   height: 60px;
-  letter-spacing: .05em; }
+  letter-spacing: .05em;
+  overflow: hidden; }
   footer .copyright {
     float: left;
     padding: 20px 30px 20px 30px; }

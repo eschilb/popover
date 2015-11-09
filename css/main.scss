@@ -1,11 +1,6 @@
 @import 'variables', 'bourbon/bourbon', 'neat/neat', 'events', 'listing';
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,700);
 
-// svg {
-// 	height: 45px;
-// 	width: 45px;
-// }
-
 
 /*Main navigation*/
 
@@ -15,11 +10,10 @@
 	background-color: $dark-green;
 	
 	a .logo-place {
-		background-color: $grey;
 		font-family: $dosis;
-		height: 40px;
-		width: 40px;
-		margin-left: 30px;
+		height: 70px;
+		width: 140px;
+		margin-left: 15px;
 		margin-top: 15px;
 		text-decoration: none;
 		display: inline-block;
@@ -106,7 +100,7 @@
 			display: inline-block;
 			font-size: 1.125rem;
 			letter-spacing: .1em;
-			margin: .5rem 2%;
+			margin: .5rem 1%;
 			padding: 12px 15px;
 			transition: all 0.3s ease-in-out;
 
@@ -271,10 +265,12 @@ footer {
 	font-size: 1.125rem;
 	height: 60px;
 	letter-spacing: .05em;
+	overflow: hidden;
 
 	.copyright {
 		float: left;
 		padding: 20px 30px 20px 30px;
+		
 		p {
 			margin: 0;
 		}
