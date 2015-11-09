@@ -398,6 +398,8 @@ footer {
 		}
 	}
 
+
+
 	form {
 
 		max-width: 700px;
@@ -424,6 +426,14 @@ footer {
 
 		.clear {
 			clear: both;
+		}
+	}
+
+	.create-event-header {
+		padding: 60px;
+
+		.create-header {
+			padding-bottom: 30px;
 		}
 	}
 
