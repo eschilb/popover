@@ -220,10 +220,6 @@ html {
   letter-spacing: .1em;
   padding: 12px 15px; }
 
-svg {
-  height: 45px;
-  width: 45px; }
-
 /*Main navigation*/
 .header {
   width: 100%;
@@ -432,6 +428,24 @@ footer {
   letter-spacing: .1em;
   color: #f5f6f4;
   background: linear-gradient(45deg, #52E8B6, #bedc32); }
+
+.home-icon {
+  height: 200px;
+  width: 200px;
+  margin: 30px auto;
+  padding: 50px;
+  border-radius: 50%;
+  background-color: #1fb870; }
+
+.home-description {
+  border-bottom: 1px solid #52E8B6;
+  color: #3A3A3C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 30px;
+  max-width: 700px;
+  padding-bottom: 30px; }
 
 /*Media queries*/
 @media screen and (min-width: 480px) {

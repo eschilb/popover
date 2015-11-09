@@ -1,10 +1,10 @@
 @import 'variables', 'bourbon/bourbon', 'neat/neat', 'events', 'listing';
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,700);
 
-svg {
-	height: 45px;
-	width: 45px;
-}
+// svg {
+// 	height: 45px;
+// 	width: 45px;
+// }
 
 
 /*Main navigation*/
@@ -314,6 +314,25 @@ footer {
   	background: $gradient;
 }
 
+.home-icon {
+	height: 200px;
+	width: 200px;
+	margin: 30px auto;
+	padding: 50px;
+	border-radius: 50%;
+	background-color: $green;
+}
+
+.home-description {
+	border-bottom: 1px solid $light-blue;
+	color: $dark-green;
+	font-family: $montserrat;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 0 30px;
+	max-width: 700px;
+	padding-bottom: 30px;
+}
 
 /*Media queries*/
 
