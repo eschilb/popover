@@ -232,8 +232,17 @@ html {
   .header a {
     box-sizing: border-box;
     overflow: hidden; }
+    .header a .home-logo {
+      background: url("../images/popover-logo-bl.svg") 0 0 no-repeat;
+      background-size: cover;
+      height: 42px;
+      width: 140px;
+      margin-left: 15px;
+      margin-top: 15px;
+      text-decoration: none;
+      display: inline-block;
+      float: left; }
     .header a .logo-place {
-      font-family: "Dosis", sans-serif;
       width: 140px;
       margin-left: 15px;
       margin-top: 15px;
