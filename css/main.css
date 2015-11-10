@@ -23,7 +23,7 @@ html {
       .accordion-tabs-minimal li.tab-header-and-content {
         display: inline; } }
   .accordion-tabs-minimal a.tab-link {
-    background-color: white;
+    background-color: #d9faef;
     border-top: 1px solid #9f9fa3;
     color: #3A3A3C;
     display: block;
@@ -44,7 +44,7 @@ html {
       @media screen and (min-width: 30em) {
         .accordion-tabs-minimal a.tab-link.is-active {
           border: 1px solid #9f9fa3;
-          border-bottom-color: white;
+          border-bottom-color: #d9faef;
           margin-bottom: -1px; } }
   .accordion-tabs-minimal .tab-content {
     display: none;
@@ -232,6 +232,10 @@ html {
   font-weight: 600;
   padding: 12px 30px 30px 0;
   vertical-align: center; }
+
+/*Global*/
+body {
+  background-color: #f5f6f4; }
 
 /*Header and Main navigation*/
 .header {
