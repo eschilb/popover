@@ -453,8 +453,17 @@ footer {
 	}
 
 	.listing-box, .rsvp {
+		float: none;
 		margin: 30px auto;
 		max-width: 700px;
+	}
+	.listing-container {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	.rsvp {
+		display: inline-block;
+		margin: 0 30px 30px 0;
 	}
 
 	.type-wrap {
