@@ -11,6 +11,7 @@ html {
 .accordion-tabs-minimal {
   line-height: 1.5;
   padding: 0;
+  margin: 0;
   max-width: 700px;
   width: 100%; }
   .accordion-tabs-minimal::after {
@@ -106,9 +107,9 @@ html {
     margin: 16px auto;
     padding: 15px; }
     .accordion-tabs-minimal .tab-content {
-      border-bottom: 1px solid #9f9fa3;
-      border-left: 1px solid #9f9fa3;
-      border-right: 1px solid #9f9fa3; }
+      border-bottom: 1px solid #b9b9bc;
+      border-left: 1px solid #b9b9bc;
+      border-right: 1px solid #b9b9bc; }
       .accordion-tabs-minimal .tab-content section h4 {
         font-size: 36px; }
       .accordion-tabs-minimal .tab-content section div {
