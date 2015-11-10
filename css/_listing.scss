@@ -7,13 +7,13 @@
 }
 
 
-	.event-image {
-		background: url('../images/listing-image.png') 0 0 no-repeat;
-		background-size: cover;
-		background-position: 50%;
-		height: 400px;
-		width: 100%;
-	}
+.event-image {
+	background: url('../images/listing-image.png') 0 0 no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 400px;
+	width: 100%;
+}
 
 .back-to-events {
 	background-color: $dark-green;
@@ -31,22 +31,23 @@
 .page-header {
 	opacity: 1;
 	clear: both;
-	color: $green;
+	color: $grey;
 	font-family: $montserrat;
 	font-weight: 700;
-	font-size: 1.5rem;
-	padding: 30px;
+	font-size: 2.5rem;
+	height: 100%;
+	padding: 150px 30px;
   	text-align: center;
   	text-shadow: 1px 1px $dark-green;
+  	background-color: rgba(255, 255, 255, 0);
 }
 
 .listing-box {
-	// border: 1px solid lighten($key-color, 70%);
 	box-shadow: 1px 1px 1px lighten($key-color, 70%);
+	clear: both;
 	margin: 30px;
 	
 	.label {
-		// border-bottom: 1px solid lighten($key-color, 30%);
 		background-color: $dark-green;
 		color: $light-blue;
 		font-family: $montserrat;

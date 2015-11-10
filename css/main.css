@@ -172,16 +172,19 @@ html {
 .page-header {
   opacity: 1;
   clear: both;
-  color: #1fb870;
+  color: #f5f6f4;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
-  padding: 30px;
+  font-size: 2.5rem;
+  height: 100%;
+  padding: 150px 30px;
   text-align: center;
-  text-shadow: 1px 1px #3A3A3C; }
+  text-shadow: 1px 1px #3A3A3C;
+  background-color: rgba(255, 255, 255, 0); }
 
 .listing-box {
   box-shadow: 1px 1px 1px #d9d9d9;
+  clear: both;
   margin: 30px; }
   .listing-box .label {
     background-color: #3A3A3C;
@@ -272,7 +275,8 @@ html {
 
 @media screen and (min-width: 660px) {
   .header {
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     .header .nav {
       font-size: 0;
       background: #3A3A3C;
@@ -418,6 +422,10 @@ footer {
       text-decoration: none; }
 
 /*Home*/
+.home-container {
+  background-color: #f5f6f4;
+  overflow: hidden; }
+
 .type-wrap {
   box-sizing: border-box;
   box-shadow: none;
@@ -459,7 +467,7 @@ footer {
 /*Media queries*/
 @media screen and (min-width: 480px) {
   .page-header, .create-event-header .create-header {
-    font-size: 2.25rem; }
+    font-size: 2.5rem; }
 
   form .ndt-container {
     max-width: 400px; }
@@ -522,7 +530,10 @@ footer {
 
   .type-wrap {
     font-size: 2rem;
-    padding: 150px; } }
+    padding: 150px; }
+
+  .page-header {
+    font-size: 4rem; } }
 @media screen and (min-width: 960px) {
   .type-wrap {
     font-size: 3rem; } }

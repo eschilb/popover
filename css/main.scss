@@ -76,6 +76,7 @@
 
 	.header {
 		width: 100%;
+		overflow: hidden;
 
 		.nav {
 			font-size: 0;
@@ -284,6 +285,12 @@ footer {
 
 /*Home*/
 
+
+.home-container {
+	background-color: $grey;
+	overflow: hidden;
+}
+
 .type-wrap {
 	$gradient: linear-gradient(45deg, $light-blue, $light-green);
   	box-sizing: border-box;
@@ -337,7 +344,7 @@ footer {
 
 @media screen and (min-width: 480px) {
 	.page-header, .create-event-header .create-header {
-		font-size: 2.25rem;
+		font-size: 2.5rem;
 	}
 
 	form {
@@ -399,7 +406,6 @@ footer {
 	}
 
 
-
 	form {
 
 		max-width: 700px;
@@ -445,6 +451,10 @@ footer {
 	.type-wrap {
 	  	font-size: 2rem;
 	  	padding: 150px;
+	}
+
+	.page-header {
+		font-size: 4rem;
 	}
 }
 
