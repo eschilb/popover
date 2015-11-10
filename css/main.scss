@@ -6,11 +6,13 @@
 
 
 .header {
-	width: 100%;
 	background-color: $dark-green;
+	box-sizing: border-box;
 	overflow: hidden;
+	width: 100%;
 	
 	a {
+		box-sizing: border-box;
 		overflow: hidden;
 		.logo-place {
 			font-family: $dosis;

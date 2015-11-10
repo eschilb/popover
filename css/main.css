@@ -225,10 +225,12 @@ html {
 
 /*Header and Main navigation*/
 .header {
-  width: 100%;
   background-color: #3A3A3C;
-  overflow: hidden; }
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%; }
   .header a {
+    box-sizing: border-box;
     overflow: hidden; }
     .header a .logo-place {
       font-family: "Dosis", sans-serif;
