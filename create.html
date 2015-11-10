@@ -89,19 +89,19 @@ Dessert: Panna Cotta</textarea>
 		      <a href="#" class="support">Contact Us</a>
 		    </div>
 		</footer>
-		<script >
+		
+		<script>
+		$(".menuIcon").click(function(event) {
+		  event.preventDefault();
+		  $(".nav").toggleClass("list");
+		});
+
 		$(document).ready(function() {
 		    $("#time").val("18:00");
 		});
 
 		$(document).ready(function() {
 		    $("#date").val("2015-11-18");
-		});
-		</script>
-		<script>
-		$(".menuIcon").click(function(event) {
-		  event.preventDefault();
-		  $(".nav").toggleClass("list");
 		});
 		</script>
 	</body>

@@ -1,0 +1,58 @@
+/*Home*/
+
+
+.home-container {
+	background-color: $grey;
+	overflow: hidden;
+}
+
+.type-wrap {
+	$gradient: linear-gradient(45deg, $light-blue, $light-green);
+  	box-sizing: border-box;
+  	box-shadow: none;
+  	border: none;
+  	font-family: $dosis;
+  	font-size: 1.125rem;
+  	font-weight: 600;
+  	padding: 100px 30px;
+  	letter-spacing: .1em;
+  	color: $grey;
+  	background: $gradient;
+}
+
+div {
+
+	.home-icon {
+		height: 200px;
+		width: 200px;
+		margin: 30px auto;
+		padding: 30px;
+		border-radius: 50%;
+		background-color: $green;
+	}
+
+	.home-description {
+		border-bottom: 2px solid $light-blue;
+		color: $dark-green;
+		font-family: $montserrat;
+		font-size: 1rem;
+		line-height: 1.5;
+		margin: 0 30px;
+		max-width: 700px;
+		padding-bottom: 30px;
+
+
+		h3 {
+			color: $green;
+			font-size: 1.25rem;
+			margin: .5rem 0;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+	.no-border {
+		border: none;
+	}
+}

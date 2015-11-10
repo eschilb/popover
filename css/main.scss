@@ -1,4 +1,4 @@
-@import 'variables', 'bourbon/bourbon', 'neat/neat', 'events', 'listing';
+@import 'variables', 'bourbon/bourbon', 'neat/neat', 'events', 'listing', 'create', 'home';
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Montserrat:400,700);
 
 
@@ -69,7 +69,6 @@ body {
 		padding: 1em;
 		margin: 0;
 		display: block;
-		transition: all 0.3s;
 		vertical-align: center;
 
 		&:active {
@@ -130,141 +129,6 @@ body {
 	}
 }
 
-/*Global styling*/
-
-
-
-/*Form header*/
-
-.create-event-header {
-	background-color: rgba(31, 184, 112, .9);
-	color: $grey;
-	font-family: $montserrat;
-	font-size: 18px;
-	line-height: 1.5;
-	padding: 30px;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	overflow: hidden;
-
-	.create-header {
-		opacity: 1;
-		clear: both;
-		color: $dark-green;
-		font-family: $montserrat;
-		font-weight: 700;
-		font-size: 1.5rem;
-	  	text-align: center;
-	  	text-shadow: 1px 1px $light-blue;
-	}
-}
-
-/*Form*/
-
-.create-image {
-	opacity: 1;
-	width: 100%;
-	height: 258px;
-	background-image: url('../images/kitchen-pattern.png');
-	background-color: $green;
-  	background-blend-mode: luminosity;
-}
-
-.create-container {
-	background-color: $grey;
-}
-
-form {
-
-	margin: 0;
-	padding: 15px;
-	max-width: 700px;
-
-	.ndt-container {
-		width: 100%;
-
-		label, input {
-			width: 100%;
-		}
-	}
-
-	.gdf-container {
-
-		label, input {
-			width: 100%;
-		}
-	}
-
-	label {
-		color: $green;
-		display: block;
-		font-family: $montserrat;
-		font-size: 1rem;
-		font-weight: 400;
-		padding-top: 30px;
-		padding-bottom: 10px;
-	}
-
-	input[type=text], 
-	input[type=date],
-	input[type=time],
-	textarea {
-		background-color: white;
-		border: 1px solid $light-blue;
-		font-family: $montserrat;
-		font-size: .812rem;
-		color: lighten($dark-green, 10%);
-	}
-
-	input[type=text],
-	textarea {
-		padding: 15px;
-	}
-
-	input[type=date],
-	input[type=time] {
-		padding: 13px 15px;
-	}
-
-	textarea {
-		width: 100%;
-		height: 200px;
-		line-height: 1.5;
-	}
-
-	.create-button {
-		margin-top: 30px;
-	}
-}
-
-::-webkit-input-placeholder {
-   color: lighten($dark-green, 10%);
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: lighten($dark-green, 10%);  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: lighten($dark-green, 10%);  
-}
-
-:-ms-input-placeholder {  
-   color: lighten($dark-green, 10%);  
-}
-
-.choose-file {
-	background-color: $light-green;
-	border: solid 3px $dark-green;
-	font-family: $dosis;
-	font-weight: 600;
-	letter-spacing: .1em;
-	padding: 10px;
-
-}
-
-
 
 /*Footer*/
 
@@ -298,61 +162,6 @@ footer {
 	}
 }
 
-/*Home*/
-
-
-.home-container {
-	background-color: $grey;
-	overflow: hidden;
-}
-
-.type-wrap {
-	$gradient: linear-gradient(45deg, $light-blue, $light-green);
-  	box-sizing: border-box;
-  	box-shadow: none;
-  	border: none;
-  	font-family: $dosis;
-  	font-size: 1.125rem;
-  	font-weight: 600;
-  	padding: 100px 30px;
-  	letter-spacing: .1em;
-  	color: $grey;
-  	background: $gradient;
-}
-
-.home-icon {
-	height: 200px;
-	width: 200px;
-	margin: 30px auto;
-	padding: 30px;
-	border-radius: 50%;
-	background-color: $green;
-}
-
-.home-description {
-	border-bottom: 1px solid $light-blue;
-	color: $dark-green;
-	font-family: $montserrat;
-	font-size: 1rem;
-	line-height: 1.5;
-	margin: 0 30px;
-	max-width: 700px;
-	padding-bottom: 30px;
-
-	&:last-of-type {
-		border-bottom: none;
-	}
-
-	h3 {
-		color: $green;
-		font-size: 1.25rem;
-		margin: .5rem 0;
-	}
-
-	p {
-		margin: 0;
-	}
-}
 
 /*Media queries*/
 
@@ -393,15 +202,19 @@ footer {
 		margin: 0 auto;
 		max-width: 900px;
 
-		.home-icon {
-			float: left;
-			clear: both;
-			margin: 0 30px;
-		}
+		div {
+			overflow: hidden;
 
-		.home-description {
-			border-bottom: none;
-			margin: 100px auto;
+			.home-icon {
+				float: left;
+				clear: both;
+				margin: 30px;
+			}
+
+			.home-description {
+				border-bottom: none;
+				padding-top: 30px;
+			}
 		}
 	}
 

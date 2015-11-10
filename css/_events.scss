@@ -186,11 +186,11 @@
 		display: inline-block;
 		text-decoration: none;
 		margin-right: 20px;
-		transition: 0.15s;
+		transition: .3s;
 		&:after {
 			content: "";
 			position: absolute;
-			transition: 0.15s;
+			transition: .3s;
 			z-index: -1;
 			background: transparent;
 		}

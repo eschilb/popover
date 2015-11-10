@@ -30,7 +30,12 @@
     <div class="tab-content">
         <section>
           <h4>Upcoming Events</h4>
-
+            <a href="listing.html">
+              <div class="btn btn-l-r">
+                <p>Fri, Nov 13 | 7 pm</p>
+                <p>Rolling Sushi</p>
+              </div>
+            </a>
             <a href="listing.html">
               <div class="btn btn-l-r">
                 <p>Wed, Nov 18 | 6 pm</p>
@@ -113,12 +118,12 @@
         <a href="#" class="support">Contact Us</a>
       </div>
     </footer>
-    <script>$(".menuIcon").click(function(event) {
+    <script type="text/javascript">
+      $(".menuIcon").click(function(event) {
       event.preventDefault();
       $(".nav").toggleClass("list");
-    });
-    </script>
-    <script type="text/javascript">
+      });
+
       $(document).ready(function () {
       $('.accordion-tabs-minimal').each(function(index) {
         $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
