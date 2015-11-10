@@ -175,9 +175,9 @@ html {
   color: #f5f6f4;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   height: 100%;
-  padding: 150px 30px;
+  padding: 150px 15px;
   text-align: center;
   text-shadow: 1px 1px #3A3A3C;
   background-color: rgba(255, 255, 255, 0); }
@@ -226,15 +226,18 @@ html {
 /*Header and Main navigation*/
 .header {
   width: 100%;
-  background-color: #3A3A3C; }
-  .header a .logo-place {
-    font-family: "Dosis", sans-serif;
-    width: 140px;
-    margin-left: 15px;
-    margin-top: 15px;
-    text-decoration: none;
-    display: inline-block;
-    float: left; }
+  background-color: #3A3A3C;
+  overflow: hidden; }
+  .header a {
+    overflow: hidden; }
+    .header a .logo-place {
+      font-family: "Dosis", sans-serif;
+      width: 140px;
+      margin-left: 15px;
+      margin-top: 15px;
+      text-decoration: none;
+      display: inline-block;
+      float: left; }
   .header .menuIcon {
     background: #3A3A3C;
     display: block;
@@ -275,8 +278,7 @@ html {
 
 @media screen and (min-width: 660px) {
   .header {
-    width: 100%;
-    overflow: hidden; }
+    width: 100%; }
     .header .nav {
       font-size: 0;
       background: #3A3A3C;

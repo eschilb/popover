@@ -8,16 +8,21 @@
 .header {
 	width: 100%;
 	background-color: $dark-green;
+	overflow: hidden;
 	
-	a .logo-place {
-		font-family: $dosis;
-		width: 140px;
-		margin-left: 15px;
-		margin-top: 15px;
-		text-decoration: none;
-		display: inline-block;
-		float: left;
+	a {
+		overflow: hidden;
+		.logo-place {
+			font-family: $dosis;
+			width: 140px;
+			margin-left: 15px;
+			margin-top: 15px;
+			text-decoration: none;
+			display: inline-block;
+			float: left;
+		}
 	}
+
 
 	.menuIcon {
 		background: $dark-green;
@@ -76,7 +81,6 @@
 
 	.header {
 		width: 100%;
-		overflow: hidden;
 
 		.nav {
 			font-size: 0;
